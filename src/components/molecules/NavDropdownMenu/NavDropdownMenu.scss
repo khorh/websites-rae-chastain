@@ -1,0 +1,31 @@
+@import "../../../styles/main";
+
+.nav__dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__icon {
+    height: 24px;
+    margin-bottom: 16px;
+  }
+
+  &__item {
+    margin: 0 0 8px 0;
+    padding-bottom: 8px;
+    border-bottom: 4px solid $color-base-light;
+    text-decoration: none;
+    font-family: $font-family-primary;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: $color-base-dark;
+
+    &:hover {
+      border-bottom: 4px solid $color-secondary-main;
+    }
+
+    &:active {
+      border-bottom: 4px solid $color-secondary-dark;
+    }
+  }
+}
