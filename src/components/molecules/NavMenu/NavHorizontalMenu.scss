@@ -1,0 +1,54 @@
+@import "../../../styles/main";
+
+.nav__horizontal-menu {
+    display: flex;
+    flex-direction: row;
+
+    &__item {
+        display: none;
+        padding-bottom: 8px;
+        border-bottom: 4px solid $color-base-light;
+        text-decoration: none;
+        font-family: $font-family-primary;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: $color-base-dark;
+
+        @include small {
+            display: block;
+            font-size: 1.25rem;
+        }
+
+        @include medium {
+            display: block;
+            font-size: 1.5rem;
+        }
+
+        @include large {
+            display: block;
+            font-size: 1.75rem;
+        }
+
+        &:not(:last-child) {
+            @include small {
+                margin: 0 32px 0 0;
+            }
+
+            @include medium {
+                margin: 0 48px 0 0;
+            }
+
+            @include large {
+                margin: 0 64px 0 0;
+            }
+        }
+
+        &:hover {
+            border-bottom: 4px solid $color-secondary-main;
+        }
+
+        &:active {
+            border-bottom: 4px solid $color-secondary-dark;
+        }
+    }
+}
