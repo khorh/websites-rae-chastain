@@ -1,0 +1,21 @@
+@import "../../../styles/main";
+
+.nav__logo {
+  height: 40px;
+  padding-bottom: 8px;
+
+  @include small {
+    height: 56px;
+    padding-bottom: 12px;
+  }
+
+  @include medium {
+    height: 72px;
+    padding-bottom: 16px;
+  }
+
+  @include large {
+    height: 88px;
+    padding-bottom: 20px;
+  }
+}
