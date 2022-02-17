@@ -28,35 +28,35 @@
         }
     }
 
-    &__icon {
-        height: 12px;
+    &__social-media:not(:last-child) {
+        margin-right: 16px;
 
         @include small {
-            height: 16px;
+            margin-right: 20px;
         }
 
         @include medium {
-            height: 20px;
+            margin-right: 24px;
         }
 
         @include large {
+            margin-right: 28px;
+        }
+    }
+
+    &__icon {
+        height: 18px;
+
+        @include small {
             height: 24px;
         }
 
-        &:not(:last-child) {
-            margin-right: 16px;
+        @include medium {
+            height: 30px;
+        }
 
-            @include small {
-                margin-right: 20px;
-            }
-
-            @include medium {
-                margin-right: 24px;
-            }
-
-            @include large {
-                margin-right: 28px;
-            }
-      }
+        @include large {
+            height: 36px;
+        }
     }
 }
