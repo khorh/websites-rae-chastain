@@ -2,17 +2,17 @@
 
 .divider {
     border: 1px solid $color-primary-light;
-    margin-bottom: 16px;
+    margin: 0 16px 16px;
 
     @include small {
-        margin-bottom: 20px;
+        margin: 0 20px 20px;
     }
 
     @include medium {
-        margin-bottom: 24px;
+        margin: 0 24px 24px;
     }
 
     @include large {
-        margin-bottom: 28px;
+        margin: 0 28px 28px;
     }
 }
