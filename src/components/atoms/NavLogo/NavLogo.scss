@@ -1,11 +1,11 @@
 @import "../../../styles/main";
 
 .nav__logo {
-  height: 40px;
+  height: 48px;
   margin-bottom: 8px;
 
   @include small {
-    height: 56px;
+    height: 60px;
     margin-bottom: 12px;
   }
 
@@ -15,7 +15,7 @@
   }
 
   @include large {
-    height: 88px;
+    height: 84px;
     margin-bottom: 20px;
   }
 }
