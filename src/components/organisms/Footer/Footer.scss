@@ -27,17 +27,17 @@
 
         @include small {
             margin-bottom: 12px;
-            font-size: 1rem;
+            font-size: 0.875rem;
         }
 
         @include medium {
             margin-bottom: 16px;
-            font-size: 1.25rem;
+            font-size: 1rem;
         }
 
         @include large {
             margin-bottom: 20px;
-            font-size: 1.5rem;
+            font-size: 1.125rem;
         }
     }
 
@@ -58,18 +58,18 @@
     }
 
     &__icon {
-        height: 18px;
+        height: 20px;
 
         @include small {
             height: 24px;
         }
 
         @include medium {
-            height: 30px;
+            height: 24px;
         }
 
         @include large {
-            height: 36px;
+            height: 28px;
         }
     }
 }
