@@ -22,7 +22,7 @@ const NavDropdownMenu = (props: NavMenuItemsProperties) => {
     const NavDropdownMenuItems = navMenuItems.map((navMenuItem: { link: string; label: string; }) => {
         return (
             <NavLink
-                className="nav__dropdown-menu__item"
+                className={({isActive}) => (isActive ? "nav__dropdown-menu__item nav__dropdown-menu__item--active" : "nav__dropdown-menu__item")}
                 to={navMenuItem.link}
                 key={navMenuItem.label}
             >

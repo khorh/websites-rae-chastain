@@ -12,7 +12,7 @@ const NavHorizontalMenu = (props: NavMenuItemsProperties) => {
     const individualNavMenuItems = navMenuItems.map((navMenuItem: { link: string; label: string; }) => {
         return (
             <NavLink
-                className="nav__horizontal-menu__item"
+                className={({isActive}) => (isActive ? "nav__horizontal-menu__item nav__horizontal-menu__item--active" : "nav__horizontal-menu__item")}
                 to={navMenuItem.link}
                 key={navMenuItem.label}
             >
