@@ -1,7 +1,7 @@
 import "./Nav.scss";
-import LogoNav from "../../Logo/Logo";
 import NavDropdownMenu from "../../molecules/NavDropdownMenu/NavDropdownMenu";
 import NavHorizontalMenu from "../../molecules/NavMenu/NavHorizontalMenu";
+import Logo from "../../Logo/Logo";
 
 const Nav = () => {
     const navMenuItems = [
@@ -29,7 +29,7 @@ const Nav = () => {
 
     return (
         <nav className="nav">
-            <LogoNav />
+            <Logo />
             <div className="nav__dropdown">
                 <NavDropdownMenu navMenuItems={navMenuItems} />
             </div>
