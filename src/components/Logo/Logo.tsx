@@ -1,10 +1,10 @@
 import "./Logo.scss";
-import Logo from "../../assets/images/logo.png";
+import LogoRaeChastain from "../../assets/images/logo.png";
 
-const LogoNav = () => {
+const Logo = () => {
     return (
-        <img className="logo" src={Logo} alt="rae chastain's logo" />
+        <img className="logo" src={LogoRaeChastain} alt="rae chastain's logo" />
     );
 };
 
-export default LogoNav;
+export default Logo;
