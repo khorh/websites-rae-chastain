@@ -1,10 +1,12 @@
+import { FC } from "react";
 import "./Nav.scss";
 import NavDropdownMenu from "../../molecules/NavDropdownMenu/NavDropdownMenu";
 import NavHorizontalMenu from "../../molecules/NavMenu/NavHorizontalMenu";
 import Logo from "../../Logo/Logo";
+import { navMenuContentProps } from "../../../interfaces/interfaces";
 
-const Nav = () => {
-    const navMenuItems = [
+const Nav: FC<navMenuContentProps> = () => {
+    const navMenuContent = [
         {
             label: "Books",
             link: "/home"
@@ -31,9 +33,9 @@ const Nav = () => {
         <nav className="nav">
             <Logo />
             <div className="nav__dropdown">
-                <NavDropdownMenu navMenuItems={navMenuItems} />
+                <NavDropdownMenu navMenuContent={navMenuContent} />
             </div>
-            <NavHorizontalMenu navMenuItems={navMenuItems} />
+            <NavHorizontalMenu navMenuContent={navMenuContent} />
         </nav>
     );
 };
