@@ -1,6 +1,6 @@
 import "./Footer.scss";
-import Facebook from "../../../assets/icons/facebook.svg";
-import Instagram from "../../../assets/icons/instagram.svg";
+import Facebook from "../../assets/icons/facebook.svg";
+import Instagram from "../../assets/icons/instagram.svg";
 
 const Footer = () => {
     return (
