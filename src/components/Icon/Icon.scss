@@ -1,0 +1,35 @@
+@import "../../styles/main";
+
+.icon {
+    &__container:not(:last-child) {
+        margin-right: 16px;
+
+        @include small {
+            margin-right: 20px;
+        }
+
+        @include medium {
+            margin-right: 24px;
+        }
+
+        @include large {
+            margin-right: 28px;
+        }
+    }
+
+    &__image {
+        height: 20px;
+
+        @include small {
+            height: 24px;
+        }
+
+        @include medium {
+            height: 24px;
+        }
+
+        @include large {
+            height: 28px;
+        }
+    }
+}
