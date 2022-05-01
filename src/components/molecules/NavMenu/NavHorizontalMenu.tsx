@@ -2,11 +2,11 @@ import {NavLink} from "react-router-dom";
 import "./NavHorizontalMenu.scss";
 
 interface NavMenuItemsProperties {
-    navMenuItems: any;
+    navMenuContent: any;
 }
 
 const NavHorizontalMenu = (props: NavMenuItemsProperties) => {
-    const {navMenuItems} = props;
+    const {navMenuContent: navMenuItems} = props;
 
     // Menu Links
     const individualNavMenuItems = navMenuItems.map((navMenuItem: { link: string; label: string; }) => {

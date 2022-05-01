@@ -5,11 +5,11 @@ import Cross from "../../../assets/images/x-circle.svg";
 import List from "../../../assets/images/list.svg";
 
 interface NavMenuItemsProperties {
-    navMenuItems: any;
+    navMenuContent: any;
 }
 
 const NavDropdownMenu = (props: NavMenuItemsProperties) => {
-    const {navMenuItems} = props;
+    const {navMenuContent: navMenuItems} = props;
 
     // Menu opens and closes
     const [showMenu, setShowMenu] = useState(false);
