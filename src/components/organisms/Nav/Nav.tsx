@@ -21,11 +21,11 @@ const Nav: FC<navMenuContentProps> = () => {
         },
         {
             label: "About",
-            link: "about"
+            link: "/about"
         },
         {
             label: "Contact",
-            link: "contact"
+            link: "/contact"
         }
     ];
 
