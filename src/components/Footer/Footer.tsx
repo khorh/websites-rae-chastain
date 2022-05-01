@@ -6,7 +6,7 @@ import Text from "../Text/Text";
 const Footer = () => {
     return (
         <footer className="footer">
-            <Text type="footer" primary={false} text="© 2022 Rae Chastain" />
+            <Text type="footer" text="© Rae Chastain" />
             <div>
                 <a className="footer__social-media" href="https://www.facebook.com/readchastain" target="_blank" rel="noreferrer">
                     <img className="footer__icon" src={Facebook} alt="facebook logo" />

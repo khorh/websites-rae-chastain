@@ -4,9 +4,9 @@ interface TextProps {
     /**
     * What is the type?
     */
-    type?: "h1" | "h2" | "h3" | "h4" | "p" | "footer";
+    type: "h1" | "h2" | "h3" | "h4" | "p" | "footer";
     /**
-     * Is the font family primary?
+     * If heading tag, is the font family primary?
      */
     primary?: boolean;
     /**
@@ -16,9 +16,9 @@ interface TextProps {
 }
 
 const Text = ({
-    type = "h1",
-    primary = true,
-    text = "Lorem ipsum...",
+    type,
+    primary,
+    text,
     ...props
 }: TextProps) => {
     const selection = primary ? "font__primary" : "font__secondary";  
@@ -33,7 +33,7 @@ const Text = ({
         case "h4": 
             return <h4 className={selection} {...props}>{text}</h4>;
         case "p": 
-            return <p className={selection} {...props}>{text}</p>;
+            return <p {...props}>{text}</p>;
         case "footer":
             return <p className="footer" {...props}>{text}</p>;
     };
