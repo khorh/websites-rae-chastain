@@ -1,4 +1,4 @@
 export interface navMenuContentProps {
-    label: string;
-    link: string;
+    label?: string;
+    link?: string;
 };
