@@ -1,5 +1,5 @@
 import {BrowserRouter, Routes, Route} from "react-router-dom";
-import Nav from "./components/organisms/Nav/Nav";
+import Nav from "./components/Nav/Nav";
 import About from "./components/pages/About/About";
 import Contact from "./components/pages/Contact/Contact";
 import Footer from "./components/organisms/Footer/Footer";
