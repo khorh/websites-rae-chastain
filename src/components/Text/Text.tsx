@@ -4,7 +4,7 @@ interface TextProps {
     /**
     * What is the type?
     */
-    type?: "h1" | "h2" | "h3" | "h4" | "p";
+    type?: "h1" | "h2" | "h3" | "h4" | "p" | "footer";
     /**
      * Is the font family primary?
      */
@@ -15,7 +15,7 @@ interface TextProps {
      text?: string;
 }
 
-export const Text = ({
+const Text = ({
     type = "h1",
     primary = true,
     text = "Lorem ipsum...",
@@ -34,5 +34,9 @@ export const Text = ({
             return <h4 className={selection} {...props}>{text}</h4>;
         case "p": 
             return <p className={selection} {...props}>{text}</p>;
+        case "footer":
+            return <p className="footer" {...props}>{text}</p>;
     };
 };
+
+export default Text;
