@@ -1,14 +1,15 @@
 import { ComponentMeta, ComponentStory } from "@storybook/react";
-import { Heading } from "./Text";
+import { Text } from "./Text";
 
 export default {
-    title: "Components/Text/Heading",
-    component: Heading
-} as ComponentMeta<typeof Heading>;
+    title: "Components/Text",
+    component: Text
+} as ComponentMeta<typeof Text>;
 
-const Template: ComponentStory<typeof Heading> = (args) => <Heading {...args} />;
+const Template: ComponentStory<typeof Text> = (args) => <Text {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
     type: "h1",
+    primary: true
 };
