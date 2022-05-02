@@ -37,7 +37,7 @@ const Icon = ({
 
     const iconFilteredName = iconList.filter(selection => selection.name === name);
 
-    const iconSelection = iconFilteredName.map(icon => {
+    const iconDisplay = iconFilteredName.map(icon => {
         return (
             <a key={icon.name} className="icon__container" href={icon.href} target="_blank" rel="noreferrer" {...props}>
                 <img className="icon__image" src={icon.src} alt={icon.alt} />
@@ -47,7 +47,7 @@ const Icon = ({
 
     return (
         <>
-            {iconSelection}
+            {iconDisplay}
         </>
     )
 };
