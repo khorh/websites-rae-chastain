@@ -1,10 +1,10 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import { ImageHeroAbout } from "./Image";
+import Image from "./Image";
 
 export default {
   title: "Components/Image/Hero",
-  component: ImageHeroAbout,
+  component: Image,
   parameters: {
     docs: {
       description: {
@@ -12,6 +12,16 @@ export default {
       },
     },
   },
-} as ComponentMeta<typeof ImageHeroAbout>;
+} as ComponentMeta<typeof Image>;
 
-export const Default: ComponentStory<typeof ImageHeroAbout> = () => <ImageHeroAbout />
+const Template: ComponentStory<typeof Image> = (args) => <Image {...args} />;
+
+export const WomanDesigning = Template.bind({});
+WomanDesigning.args = {
+    name: "womanDesigning"
+}
+
+export const PaperPlane = Template.bind({});
+PaperPlane.args = {
+    name: "paperPlane"
+}
