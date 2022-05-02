@@ -11,17 +11,6 @@ let Storyblok = new StoryblokClient({
 const Contact = () => {
     const [contactData, setContactData] = useState<string>();
 
-    // useEffect(() => {
-    //     Storyblok.get("cdn/stories/127058094", {})
-    //         .then(response => {
-    //             setContactData(response.data.story.content.contact_info);
-    //         }).catch(error => {
-    //             console.log(error)
-    //         })
-    // }, []);
-
-
-
     useEffect(() => {
         Storyblok.get("cdn/stories/127058094", {})
             .then(response => {
@@ -34,9 +23,7 @@ const Contact = () => {
     return (
         <main className="contact">
             <Image name="paperPlane" />
-            <section>
-                <Text type="h1" primary text="Contact" />
-            </section>
+            <Text type="h1" primary text="Contact" />
             <section className="contact__text">
                 <Text type="p" text={contactData} />
             </section>

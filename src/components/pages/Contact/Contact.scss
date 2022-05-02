@@ -7,39 +7,19 @@
     padding: 0 16px 16px;
 
     @include small {
-        padding: 0 24px 24px;
-    }
-
-    @include medium {
         padding: 0 32px 32px;
     }
 
-    @include large {
-        padding: 0 40px 40px;
+    @include medium {
+        padding: 0 48px 48px;
     }
 
-    &__title {
-        @include small {
-            display: none;
-        }
-
-        @include medium {
-            display: none;
-        }
-
-        @include large {
-            display: none;
-        }
+    @include large {
+        padding: 0 64px 64px;
     }
 
     &__text {
         max-width: 800px;
         margin-bottom: 16px;
-    }
-
-    &__image {
-        width: 100%;
-        max-width: 600px;
-        height: auto;
     }
 }
