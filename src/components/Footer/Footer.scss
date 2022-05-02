@@ -4,17 +4,4 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 32px;
-
-    @include small {
-        margin-bottom: 40px;
-    }
-
-    @include medium {
-        margin-bottom: 48px;
-    }
-
-    @include large {
-        margin-bottom: 56px;
-    }
 }
