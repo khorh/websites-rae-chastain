@@ -1,0 +1,25 @@
+@import "../../styles/main.scss";
+
+.image {
+    &__container {
+        margin-bottom: 8px;
+
+        @include small {
+            margin-bottom: 12px;
+        }
+
+        @include medium {
+            margin-bottom: 16px;
+        }
+
+        @include large {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__hero {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+    }
+}

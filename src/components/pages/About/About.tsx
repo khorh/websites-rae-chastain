@@ -1,13 +1,14 @@
 import "./About.scss";
 import RaeChastain from "../../../assets/images/rae-chastain.jpg";
-import WomanDesigning from "../../../assets/images/woman-designing.jpg";
+import Text from "../../Text/Text";
+import Image from "../../Image/Image";
 
 const About = () => {
     return (
         <main className="about">
-            <h1 className="about__title">About</h1>
+            <Image name="womanDesigning" />
             <section>
-                <img className="about__image" src={WomanDesigning} alt="woman designing" />
+                <Text type="h1" primary text="About" />
             </section>
             <section className="about__text">
                 <p>Hi there! I'm Rae Chastain and I'm delighted that you've taken an interest in my books.  I've worked in a lot of different creative areas over the years, including animation, greetings cards, product design, furniture design, graphic design, furniture crafting, wedding stationery, cake baking with decoration and (for a considerable number of years) I've been teaching design and technology to a wonderfully recipient audience of teenagers! Life's been full and fun.  I've gotten to dabble in any creative field that I fancied deepening my skills in. But, by far and large, the greatest and most recent joy to have finally made a reality is the joy of creating children's picture books.  For the longest time, I've wanted to (but was too scared to) venture into this field.  After much development of storylines and illustration style, I finally wrote and illustrated my first couple of books in 2021, starting with 'The Octopus and the Mermaid' and 'The Clawby'.  I live in the UK (United Kingdom), primarily in London, with my 3 daughter's, 10 goldfish and Ferrero (our Siberian forest cat). I hope to develop and publish many more books with time, and I hope that they bring my readers as much joy as they brought me to produce them.

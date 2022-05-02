@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import StoryblokClient from "storyblok-js-client";
 import "./Contact.scss";
-import PaperPlane from "../../../assets/images/paper-plane.jpg";
 import Text from "../../Text/Text";
+import Image from "../../Image/Image";
 
 let Storyblok = new StoryblokClient({
     accessToken: "4UDPA39TEehWMG9eE631oAtt"
@@ -33,11 +33,9 @@ const Contact = () => {
 
     return (
         <main className="contact">
+            <Image name="paperPlane" />
             <section>
-                <img className="contact__image" src={PaperPlane} alt="people throwing paper plane" />
-            </section>
-            <section>
-                <Text type="h1" primary text="About" />
+                <Text type="h1" primary text="Contact" />
             </section>
             <section className="contact__text">
                 <Text type="p" text={contactData} />
