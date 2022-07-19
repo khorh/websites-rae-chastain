@@ -6,28 +6,28 @@
     align-items: center;
     padding: 16px 0 24px;
 
-    @include small {
+    @include breakpoint-small {
         padding: 24px 0 32px;
     }
 
-    @include medium {
+    @include breakpoint-medium {
         padding: 32px 0 48px;
     }
 
-    @include large {
+    @include breakpoint-large {
         padding: 40px 0 60px;
     }
 
     &__dropdown {
-        @include small {
+        @include breakpoint-small {
             display: none;
         }
 
-        @include medium {
+        @include breakpoint-medium {
             display: none;
         }
 
-        @include large {
+        @include breakpoint-large {
             display: none;
         }
     }

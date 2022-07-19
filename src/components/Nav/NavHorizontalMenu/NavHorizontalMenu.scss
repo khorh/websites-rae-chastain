@@ -14,31 +14,31 @@
         line-height: 1.5;
         color: $color-base-dark;
 
-        @include small {
+        @include breakpoint-small {
             display: block;
             font-size: 1.25rem;
         }
 
-        @include medium {
+        @include breakpoint-medium {
             display: block;
             font-size: 1.5rem;
         }
 
-        @include large {
+        @include breakpoint-large {
             display: block;
             font-size: 1.75rem;
         }
 
         &:not(:last-child) {
-            @include small {
+            @include breakpoint-small {
                 margin: 0 32px 0 0;
             }
 
-            @include medium {
+            @include breakpoint-medium {
                 margin: 0 48px 0 0;
             }
 
-            @include large {
+            @include breakpoint-large {
                 margin: 0 64px 0 0;
             }
         }

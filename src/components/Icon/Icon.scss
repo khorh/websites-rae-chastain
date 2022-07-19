@@ -4,15 +4,15 @@
     &__container:not(:last-child) {
         margin-right: 16px;
 
-        @include small {
+        @include breakpoint-small {
             margin-right: 20px;
         }
 
-        @include medium {
+        @include breakpoint-medium {
             margin-right: 24px;
         }
 
-        @include large {
+        @include breakpoint-large {
             margin-right: 28px;
         }
     }
@@ -20,15 +20,15 @@
     &__image {
         height: 20px;
 
-        @include small {
+        @include breakpoint-small {
             height: 24px;
         }
 
-        @include medium {
+        @include breakpoint-medium {
             height: 24px;
         }
 
-        @include large {
+        @include breakpoint-large {
             height: 28px;
         }
     }
