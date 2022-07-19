@@ -1,3 +1,20 @@
+@import "./styles/main.scss";
+
 body {
-  margin: 0 auto;
+    margin: 0;
+    div {
+        @include breakpoint-extra-small {
+            @include grid-extra-small;
+        }
+        @include breakpoint-small {
+            @include grid-small;
+        }
+        @include breakpoint-medium {
+    
+        }
+    
+        @include breakpoint-large {
+    
+        }
+    }
 }

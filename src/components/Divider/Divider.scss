@@ -1,6 +1,7 @@
 @import "../../styles/main";
 
 .divider {
+    grid-column: 2 / -2;
     border: 1px solid $color-primary-light;
     margin: 0 16px 16px;
 

@@ -1,6 +1,7 @@
 @import "../../styles/main";
 
 .footer {
+    grid-column: 2 / -2;
     display: flex;
     flex-direction: column;
     align-items: center;
