@@ -1,4 +1,9 @@
-//general imports
+/*
+    MAIN
+    Using Sass @import, this file combines multiple stylesheets' CSS together.
+    https://sass-lang.com/documentation/at-rules/import
+*/
+
 @import "./mixins";
 @import "./variables";
 @import "./vendors";

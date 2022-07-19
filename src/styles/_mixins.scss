@@ -1,0 +1,49 @@
+/*
+    GRID LAYOUT
+    This website uses a grid layout and based on material design.
+    https://material.io/design/layout/responsive-layout-grid.html#breakpoints
+*/
+
+// Breakpoints
+// Extra small (phone)
+@mixin breakpoint-extra-small {
+    @media (min-width: 0) {
+        @content;
+    }
+}
+
+// Small (tablet)
+@mixin breakpoint-small {
+  @media (min-width: 600px) {
+      @content;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@mixin breakpoint-medium {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@mixin breakpoint-large {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+// Grids
+// Extra small (phone)
+@mixin grid-extra-small {
+    display: grid;
+    grid-template-columns: 16px repeat(4, 1fr) 16px;
+    column-gap: 16px;
+}
+
+// Small (tablet)
+@mixin grid-small {
+    display: grid;
+    grid-template-columns: 32px repeat(8, 1fr) 32px;
+    column-gap: 16px;
+}
