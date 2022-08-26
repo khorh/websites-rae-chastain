@@ -4,9 +4,11 @@
     https://sass-lang.com/documentation/at-rules/import
 */
 
+@import "./colors";
 @import "./layout/breakpoints";
 @import "./layout/grids";
 @import "./layout/spacings";
+@import "./typography";
 @import "./mixins";
 @import "./variables";
 @import "./vendors";
