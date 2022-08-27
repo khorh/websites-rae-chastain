@@ -1,5 +1,13 @@
 @import "../../styles/main.scss";
 
+.font__primary {
+    font-family: $font-family-primary;
+}
+
+.font__secondary {
+    font-family: $font-family-secondary;
+}
+
 h1, h2, h3, h4, p, .footer {
     margin: 0;
     font-weight: 400;
@@ -126,12 +134,4 @@ p {
         font-size: 1.25rem;
         margin-bottom: 10px;
     }
-}
-
-.font__primary {
-    font-family: $font-family-primary;
-}
-
-.font__secondary {
-    font-family: $font-family-secondary;
 }
