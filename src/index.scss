@@ -4,17 +4,19 @@ body {
     margin: 0;
     div {
         @include breakpoint-xxs {
-            @include grid-extra-small;
+            @include grid-xxs;
         }
         @include breakpoint-xs {
-            @include grid-small;
+            @include grid-xs;
         }
         @include breakpoint-s {
-    
+            @include grid-s;
         }
-    
         @include breakpoint-m {
-    
+            @include grid-m;
+        }
+        @include breakpoint-l {
+            @include grid-l;
         }
     }
 }

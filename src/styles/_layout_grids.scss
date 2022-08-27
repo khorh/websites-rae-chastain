@@ -1,34 +1,34 @@
 // Layout > Grids
-// Extra small (phone)
-@mixin grid-extra-small {
+// Phone
+@mixin grid-xxs {
     display: grid;
     grid-template-columns: 16px repeat(4, 1fr) 16px;
     column-gap: 16px;
 }
 
-// Small (tablet)
-@mixin grid-small {
+// Tablet
+@mixin grid-xs {
     display: grid;
     grid-template-columns: 32px repeat(8, 1fr) 32px;
     column-gap: 16px;
 }
 
-// Small-medium (tablet)
-@mixin grid-small-medium {
+// Large tablet
+@mixin grid-s {
   display: grid;
   grid-template-columns: 1fr repeat(12, 56px) 1fr;
   column-gap: 16px;
 }
 
-// Medium (laptop)
-@mixin grid-medium {
+// Laptop
+@mixin grid-m {
   display: grid;
   grid-template-columns: 1fr repeat(12, 64px) 1fr;
   column-gap: 16px;
 }
 
-// Large (desktop)
-@mixin grid-large {
+// Desktop
+@mixin grid-l {
   display: grid;
   grid-template-columns: 1fr repeat(12, 72px) 1fr;
   column-gap: 16px;
