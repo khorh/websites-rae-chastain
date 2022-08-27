@@ -18,17 +18,17 @@ h1 {
     font-size: 1.5rem;
     margin-bottom: 12px;
 
-    @include breakpoint-small {
+    @include breakpoint-xs {
         font-size: 1.625rem;
         margin-bottom: 13px;
     }
 
-    @include breakpoint-medium {
+    @include breakpoint-s {
         font-size: 1.75rem;
         margin-bottom: 14px;
     }
 
-    @include breakpoint-large {
+    @include breakpoint-m {
         font-size: 1.875rem;
         margin-bottom: 15px;
     }
@@ -38,17 +38,17 @@ h2 {
     font-size: 1.375rem;
     margin-bottom: 11px;
 
-    @include breakpoint-small {
+    @include breakpoint-xs {
         font-size: 1.5rem;
         margin-bottom: 12px;
     }
 
-    @include breakpoint-medium {
+    @include breakpoint-s {
         font-size: 1.625rem;
         margin-bottom: 13px;
     }
 
-    @include breakpoint-large {
+    @include breakpoint-m {
         font-size: 1.75rem;
         margin-bottom: 14px;
     }
@@ -58,17 +58,17 @@ h3 {
     font-size: 1.25rem;
     margin-bottom: 10px;
 
-    @include breakpoint-small {
+    @include breakpoint-xs {
         font-size: 1.375rem;
         margin-bottom: 11px;
     }
 
-    @include breakpoint-medium {
+    @include breakpoint-s {
         font-size: 1.5rem;
         margin-bottom: 12px;
     }
 
-    @include breakpoint-large {
+    @include breakpoint-m {
         font-size: 1.625rem;
         margin-bottom: 13px;
     }
@@ -78,17 +78,17 @@ h4 {
     font-size: 1.125rem;
     margin-bottom: 9px;
 
-    @include breakpoint-small {
+    @include breakpoint-xs {
         font-size: 1.25rem;
         margin-bottom: 10px;
     }
 
-    @include breakpoint-medium {
+    @include breakpoint-s {
         font-size: 1.375rem;
         margin-bottom: 11px;
     }
 
-    @include breakpoint-large {
+    @include breakpoint-m {
         font-size: 1.5rem;
         margin-bottom: 12px;
     }
@@ -99,17 +99,17 @@ p {
     font-size: 1rem;
     margin-bottom: 8px;
 
-    @include breakpoint-small {
+    @include breakpoint-xs {
         font-size: 1.125rem;
         margin-bottom: 9px;
     }
 
-    @include breakpoint-medium {
+    @include breakpoint-s {
         font-size: 1.25rem;
         margin-bottom: 10px;
     }
 
-    @include breakpoint-large {
+    @include breakpoint-m {
         font-size: 1.375rem;
         margin-bottom: 11px;
     }
@@ -120,17 +120,17 @@ p {
     font-size: 0.875rem;
     margin-bottom: 7px;
 
-    @include breakpoint-small {
+    @include breakpoint-xs {
         font-size: 1rem;
         margin-bottom: 8px;
     }
 
-    @include breakpoint-medium {
+    @include breakpoint-s {
         font-size: 1.125rem;
         margin-bottom: 9px;
     }
 
-    @include breakpoint-large {
+    @include breakpoint-m {
         font-size: 1.25rem;
         margin-bottom: 10px;
     }

@@ -7,15 +7,15 @@
     align-items: center;
     padding: 0 16px 16px;
 
-    @include breakpoint-small {
+    @include breakpoint-xs {
         padding: 0 32px 32px;
     }
 
-    @include breakpoint-medium {
+    @include breakpoint-s {
         padding: 0 48px 48px;
     }
 
-    @include breakpoint-large {
+    @include breakpoint-m {
         padding: 0 64px 64px;
     }
 
@@ -23,17 +23,17 @@
         height: 120px;
         margin-bottom: 16px;
 
-        @include breakpoint-small {
+        @include breakpoint-xs {
             height: 160px;
             margin-bottom: 20px;
         }
 
-        @include breakpoint-medium {
+        @include breakpoint-s {
             height: 200px;
             margin-bottom: 24px;
         }
 
-        @include breakpoint-large {
+        @include breakpoint-m {
             height: 240px;
             margin-bottom: 28px;
         }

@@ -1,34 +1,34 @@
 // Layout > Breakpoints
 // Extra-small (phone)
-@mixin breakpoint-extra-small {
+@mixin breakpoint-xxs {
     @media (min-width: 0) {
         @content;
     }
 }
 
 // Small (tablet)
-@mixin breakpoint-small {
+@mixin breakpoint-xs {
   @media (min-width: 600px) {
       @content;
   }
 }
 
 // Small-medium (tablet)
-@mixin breakpoint-small-medium {
+@mixin breakpoint-s {
   @media (min-width: 905px) {
       @content;
   }
 }
 
 // Medium (laptop)
-@mixin breakpoint-medium {
+@mixin breakpoint-m {
   @media (min-width: 1240px) {
     @content;
   }
 }
 
 // Large (desktop)
-@mixin breakpoint-large {
+@mixin breakpoint-l {
   @media (min-width: 1440px) {
     @content;
   }

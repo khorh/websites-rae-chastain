@@ -3,17 +3,17 @@
 body {
     margin: 0;
     div {
-        @include breakpoint-extra-small {
+        @include breakpoint-xxs {
             @include grid-extra-small;
         }
-        @include breakpoint-small {
+        @include breakpoint-xs {
             @include grid-small;
         }
-        @include breakpoint-medium {
+        @include breakpoint-s {
     
         }
     
-        @include breakpoint-large {
+        @include breakpoint-m {
     
         }
     }

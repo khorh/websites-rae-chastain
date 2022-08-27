@@ -7,29 +7,28 @@
     align-items: center;
     padding: 16px 0 24px;
 
-    @include breakpoint-small {
+    @include breakpoint-xs {
         padding: 24px 0 32px;
     }
 
-    @include breakpoint-medium {
+    @include breakpoint-s {
         padding: 32px 0 48px;
     }
 
-    @include breakpoint-large {
+    @include breakpoint-m {
         padding: 40px 0 60px;
     }
 
     &__dropdown {
-        grid-column: 2 / -2;
-        @include breakpoint-small {
+        @include breakpoint-xs {
             display: none;
         }
 
-        @include breakpoint-medium {
+        @include breakpoint-s {
             display: none;
         }
 
-        @include breakpoint-large {
+        @include breakpoint-m {
             display: none;
         }
     }

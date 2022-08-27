@@ -4,15 +4,15 @@
     &__container {
         margin-bottom: 8px;
 
-        @include breakpoint-small {
+        @include breakpoint-xs {
             margin-bottom: 12px;
         }
 
-        @include breakpoint-medium {
+        @include breakpoint-s {
             margin-bottom: 16px;
         }
 
-        @include breakpoint-large {
+        @include breakpoint-m {
             margin-bottom: 20px;
         }
     }
