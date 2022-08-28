@@ -2,25 +2,25 @@
 
 .logo {
   height: 48px;
-  margin-bottom: $spacing-xs;
+  margin-bottom: $spacing-xxs;
 
   @include breakpoint-xs {
     height: 56px;
-    margin-bottom: $spacing-s;
+    margin-bottom: $spacing-xs;
   }
 
   @include breakpoint-s {
     height: 64px;
-    margin-bottom: $spacing-m;
+    margin-bottom: $spacing-s;
   }
 
   @include breakpoint-m {
     height: 72px;
-    margin-bottom: $spacing-l;
+    margin-bottom: $spacing-m;
   }
 
   @include breakpoint-l {
     height: 80px;
-    margin-bottom: $spacing-xl;
+    margin-bottom: $spacing-l;
   }
 }
