@@ -1,5 +1,6 @@
 {
   "name": "rae-chastain",
+  "homepage": "https://www.helen.khor/websites-rae-chastain",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,6 +13,7 @@
     "@types/react-dom": "^17.0.11",
     "@types/react-router-dom": "^5.3.3",
     "axios": "^0.26.1",
+    "gh-pages": "^4.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^6.2.1",
@@ -21,12 +23,15 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "chromatic": "npx chromatic --project-token=add98cfc725e"
   },
   "eslintConfig": {
     "extends": [
@@ -67,7 +72,10 @@
     "@storybook/preset-create-react-app": "^4.1.0",
     "@storybook/react": "^6.4.22",
     "@storybook/testing-library": "0.0.9",
+    "chromatic": "^6.8.0",
     "sass": "^1.49.0",
     "webpack": "^5.72.0"
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "rae-chastain@0.1.0"
 }

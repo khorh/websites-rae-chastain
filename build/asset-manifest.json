@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/websites-rae-chastain/static/css/main.1b458000.css",
+    "main.js": "/websites-rae-chastain/static/js/main.64a01a98.js",
+    "static/js/787.d5e50819.chunk.js": "/websites-rae-chastain/static/js/787.d5e50819.chunk.js",
+    "static/media/woman-designing.jpg": "/websites-rae-chastain/static/media/woman-designing.258e5bc69bb88e9ff0c5.jpg",
+    "static/media/rae-chastain.jpg": "/websites-rae-chastain/static/media/rae-chastain.2c0c22fc1693223baa59.jpg",
+    "static/media/paper-plane.jpg": "/websites-rae-chastain/static/media/paper-plane.c4a092363aec80b108d7.jpg",
+    "static/media/logo.png": "/websites-rae-chastain/static/media/logo.cf4cf043981fabb669c3.png",
+    "static/media/instagram.svg": "/websites-rae-chastain/static/media/instagram.568d8b5eb8e438e6084ca8e12b56166b.svg",
+    "index.html": "/websites-rae-chastain/index.html",
+    "static/media/box.svg": "/websites-rae-chastain/static/media/box.5804fc9ae255f0b22f204022a9cd7de2.svg",
+    "static/media/facebook.svg": "/websites-rae-chastain/static/media/facebook.3348f34c678ec5336944005d135be685.svg",
+    "static/media/x-circle.svg": "/websites-rae-chastain/static/media/x-circle.e4e449424bc3da8c4621baeedbce54ea.svg",
+    "static/media/list.svg": "/websites-rae-chastain/static/media/list.e20a4527fd75dbcadb08ce953e89211a.svg",
+    "main.1b458000.css.map": "/websites-rae-chastain/static/css/main.1b458000.css.map",
+    "main.64a01a98.js.map": "/websites-rae-chastain/static/js/main.64a01a98.js.map",
+    "787.d5e50819.chunk.js.map": "/websites-rae-chastain/static/js/787.d5e50819.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1b458000.css",
+    "static/js/main.64a01a98.js"
+  ]
+}
