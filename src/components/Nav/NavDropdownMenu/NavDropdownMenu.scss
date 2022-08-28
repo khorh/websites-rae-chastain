@@ -7,25 +7,25 @@
 
   &__icon {
     height: 24px;
-    margin-bottom: 16px;
+    margin-bottom: $spacing-s;
   }
 
   &__item {
-    margin: 0 0 8px 0;
-    padding-bottom: 8px;
-    border-bottom: 4px solid $color-base-light;
+    margin: 0 0 $spacing-xs 0;
+    border-bottom: $spacing-xxs solid $color-base-light;
     text-decoration: none;
+    padding-bottom: $spacing-xs;
     font-family: $font-family-primary;
     font-size: 1rem;
     line-height: 1.5;
     color: $color-base-dark;
 
     &:hover {
-      border-bottom: 4px solid $color-secondary-main;
+      border-bottom: $spacing-xxs solid $color-secondary-main;
     }
 
     &--active {
-      border-bottom: 4px solid $color-secondary-dark;
+      border-bottom: $spacing-xxs solid $color-secondary-dark;
     }
   }
 }
