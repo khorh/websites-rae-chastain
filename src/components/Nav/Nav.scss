@@ -5,30 +5,26 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 16px 0 24px;
+    padding: $spacing-s 0;
 
     @include breakpoint-xs {
-        padding: 24px 0 32px;
+        padding: $spacing-m 0;
     }
 
     @include breakpoint-s {
-        padding: 32px 0 48px;
+        padding: $spacing-l 0;
     }
 
     @include breakpoint-m {
-        padding: 40px 0 60px;
+        padding: $spacing-xl 0;
+    }
+
+    @include breakpoint-l {
+        padding: $spacing-xxl 0;
     }
 
     &__dropdown {
         @include breakpoint-xs {
-            display: none;
-        }
-
-        @include breakpoint-s {
-            display: none;
-        }
-
-        @include breakpoint-m {
             display: none;
         }
     }
