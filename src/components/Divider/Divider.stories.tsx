@@ -5,13 +5,6 @@ import Divider from "./Divider";
 export default {
   title: "Components/Divider",
   component: Divider,
-  parameters: {
-    docs: {
-      description: {
-        component: "A divider separates two pieces of content.",
-      },
-    },
-  },
 } as ComponentMeta<typeof Divider>;
 
-export const Default: ComponentStory<typeof Divider> = () => <Divider />
+export const Dividers: ComponentStory<typeof Divider> = () => <Divider />;
