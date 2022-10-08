@@ -1,7 +1,7 @@
 import { FC } from "react";
 import styles from "./Button.module.scss";
 
-interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
+export interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
   /**
    * What is the type?
    */
