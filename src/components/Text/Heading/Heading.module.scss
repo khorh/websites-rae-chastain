@@ -1,0 +1,24 @@
+@import "../../styles/main.scss";
+
+h1,
+h2 {
+  margin: 0;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+.primary {
+  font-family: $font-family-primary;
+}
+
+.secondary {
+  font-family: $font-family-secondary;
+  font-weight: 500;
+}
