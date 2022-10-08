@@ -1,6 +1,14 @@
+import { FC } from "react";
 import styles from "./Button.module.scss";
 
-const Button = (props: any) => {
+interface ButtonProps {
+  /**
+   * What is the type?
+   */
+  type: "primary" | "secondary";
+}
+
+const Button: FC<ButtonProps> = (props: any) => {
   const type = props.type;
 
   return (
