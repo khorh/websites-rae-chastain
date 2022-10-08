@@ -9,10 +9,8 @@ interface ButtonProps {
 }
 
 const Button: FC<ButtonProps> = (props: any) => {
-  const type = props.type;
-
   return (
-    <button className={`${styles.base} ${styles[type]}`}>
+    <button className={`${styles.base} ${styles[props.type]}`}>
       {props.children}
     </button>
   );
