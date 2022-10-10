@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className={`${styles.base}`}>
       <Divider marginBottom={24} />
-      <Paragraph size="medium" weight={500}>
+      <Paragraph size="medium" weight={500} marginBottom={16}>
         © Rae Chastain
       </Paragraph>
       <div>
