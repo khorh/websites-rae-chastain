@@ -15,7 +15,7 @@ const Divider: FC<DividerProps> = (props) => {
     ? `marginBottom__${props.marginBottom}`
     : "marginBottom__0";
 
-  return <hr className={`${styles.base} ${styles[marginBottom]}`} />;
+  return <hr className={`${styles.base} ${marginBottom}`} />;
 };
 
 export default Divider;
