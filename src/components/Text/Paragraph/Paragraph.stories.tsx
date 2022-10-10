@@ -11,16 +11,16 @@ export const Paragraphs: ComponentStory<typeof Paragraph> = (
 ) => {
   return (
     <>
-      <Paragraph size="medium" weight={400}>
+      <Paragraph size="medium" weight={400} marginBottom={16}>
         Paragraph: Medium 400
       </Paragraph>
-      <Paragraph size="medium" weight={500}>
+      <Paragraph size="medium" weight={500} marginBottom={16}>
         Paragraph: Medium 500
       </Paragraph>
-      <Paragraph size="large" weight={400}>
+      <Paragraph size="large" weight={400} marginBottom={16}>
         Paragraph: Large 400
       </Paragraph>
-      <Paragraph size="large" weight={500}>
+      <Paragraph size="large" weight={500} marginBottom={16}>
         Paragraph: Large 500
       </Paragraph>
     </>
