@@ -11,16 +11,16 @@ export const Headings: ComponentStory<typeof Heading> = (
 ) => {
   return (
     <>
-      <Heading type="h1" font="primary">
+      <Heading type="h1" font="primary" marginBottom={16}>
         H1: Primary font
       </Heading>
-      <Heading type="h2" font="primary">
+      <Heading type="h2" font="primary" marginBottom={16}>
         H2: Primary font
       </Heading>
-      <Heading type="h1" font="secondary">
+      <Heading type="h1" font="secondary" marginBottom={16}>
         H1: Secondary font
       </Heading>
-      <Heading type="h2" font="secondary">
+      <Heading type="h2" font="secondary" marginBottom={16}>
         H2: Secondary font
       </Heading>
     </>
