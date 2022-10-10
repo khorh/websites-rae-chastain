@@ -6,7 +6,7 @@ import Paragraph from "../Text/Paragraph/Paragraph";
 const Footer = () => {
   return (
     <footer className={`${styles.base}`}>
-      <Divider />
+      <Divider marginBottom={24} />
       <Paragraph size="medium" weight={500}>
         © Rae Chastain
       </Paragraph>
