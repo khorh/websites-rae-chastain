@@ -3,6 +3,9 @@ import styles from "./Divider.module.scss";
 import "../../styles/main.scss";
 
 export interface DividerProps {
+  /**
+   * What is the spacing at the bottom?
+   */
   marginBottom?: 4 | 8 | 16 | 24 | 32 | 48;
 }
 
