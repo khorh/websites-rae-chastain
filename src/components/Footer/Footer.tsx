@@ -10,7 +10,7 @@ const Footer = () => {
       <Paragraph size="medium" weight={500} marginBottom={16}>
         © Rae Chastain
       </Paragraph>
-      <div>
+      <div className={styles.container}>
         <Icon name="facebook" />
         <Icon name="instagram" />
       </div>
