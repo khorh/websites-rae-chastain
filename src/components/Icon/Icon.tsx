@@ -10,7 +10,7 @@ export interface IconProps extends React.HTMLAttributes<HTMLDivElement> {
   /**
    * What is the icon's size?
    */
-  size?: "small" | "medium" | "large";
+  size?: "small" | "medium";
 }
 
 const Icon: FC<IconProps> = (props) => {
