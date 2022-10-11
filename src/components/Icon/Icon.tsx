@@ -2,7 +2,7 @@ import { FC } from "react";
 import styles from "./Icon.module.scss";
 import iconList from "./IconList";
 
-export interface IconProps {
+export interface IconProps extends React.HTMLAttributes<HTMLDivElement> {
   /**
    * What is the icon's name?
    */

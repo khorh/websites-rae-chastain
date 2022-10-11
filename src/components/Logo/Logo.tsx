@@ -2,7 +2,7 @@ import { FC } from "react";
 import styles from "./Logo.module.scss";
 import LogoRaeChastain from "../../assets/images/logo.png";
 
-export interface LogoProps {
+export interface LogoProps extends React.HTMLAttributes<HTMLImageElement> {
   /**
    * What is the spacing at the bottom?
    */

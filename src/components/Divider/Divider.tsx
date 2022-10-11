@@ -2,7 +2,7 @@ import { FC } from "react";
 import styles from "./Divider.module.scss";
 import "../../styles/main.scss";
 
-export interface DividerProps {
+export interface DividerProps extends React.HTMLAttributes<HTMLHRElement> {
   /**
    * What is the spacing at the bottom?
    */
