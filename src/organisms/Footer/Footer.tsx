@@ -11,7 +11,7 @@ const Footer = () => {
         © Rae Chastain
       </Paragraph>
       <div className={styles.container__icons}>
-        <Icon name="facebook" size="small" />
+        <Icon name="facebook" size="small" marginRight={16} />
         <Icon name="instagram" size="small" />
       </div>
     </footer>
