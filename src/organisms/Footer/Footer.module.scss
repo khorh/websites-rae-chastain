@@ -1,6 +1,6 @@
 @import "../../styles/main";
 
-.base {
+.container {
   grid-column: 2 / -2;
   margin-bottom: $spacing-32;
   display: flex;
@@ -8,6 +8,6 @@
   align-items: center;
 }
 
-.container {
+.container__icons {
   display: flex;
 }

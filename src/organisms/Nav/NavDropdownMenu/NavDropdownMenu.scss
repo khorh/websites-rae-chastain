@@ -1,0 +1,31 @@
+@import "../../../styles/main.scss";
+
+.nav__dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__icon {
+    height: 24px;
+    margin-bottom: $spacing-16;
+  }
+
+  &__item {
+    margin: 0 0 $spacing-16 0;
+    border-bottom: $spacing-16 solid $color-base-light;
+    text-decoration: none;
+    padding-bottom: $spacing-16;
+    font-family: $font-family-primary;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: $color-base-dark;
+
+    &:hover {
+      border-bottom: $spacing-8 solid $color-secondary-main;
+    }
+
+    &--active {
+      border-bottom: $spacing-8 solid $color-secondary-dark;
+    }
+  }
+}
