@@ -8,6 +8,7 @@ $spacing-32: 32px;
 $spacing-48: 48px;
 
 // Shared spacing styles
+// Margin Bottom
 .marginBottom__0 {
   margin: 0;
 }
@@ -28,10 +29,40 @@ $spacing-48: 48px;
   margin: 0 0 $spacing-24 0;
 }
 
-.marginbottom__32 {
+.marginBottom__32 {
   margin: 0 0 $spacing-32 0;
 }
 
 .marginBottom__48 {
   margin: 0 0 $spacing-48 0;
+}
+
+// Margin Right
+
+.marginRight__0 {
+  margin: 0;
+}
+
+.marginRight__4 {
+  margin: 0 $spacing-4 0 0;
+}
+
+.marginRight__8 {
+  margin: 0 $spacing-8 0 0;
+}
+
+.marginRight__16 {
+  margin: 0 $spacing-16 0 0;
+}
+
+.marginRight__24 {
+  margin: 0 $spacing-24 0 0;
+}
+
+.marginRight__32 {
+  margin: 0 $spacing-32 0 0;
+}
+
+.marginRight__48 {
+  margin: 0 $spacing-48 0 0;
 }
