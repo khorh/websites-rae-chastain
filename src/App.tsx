@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Nav from "./components/Nav/Nav";
+import Footer from "./organisms/Footer/Footer";
+import Nav from "./organisms/Nav/Nav";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
-import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
