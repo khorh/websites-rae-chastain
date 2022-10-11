@@ -1,32 +1,70 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-
-import Icon from "./Icon";
+import Icon, { IconProps } from "./Icon";
 
 export default {
-  title: "Components/Icon",
+  title: "Components/Icons",
   component: Icon,
-  parameters: {
-    docs: {
-      description: {
-        component: "An icon is a compact symbol that represents a discrete object, action, or idea.",
-      },
-    },
-  },
 } as ComponentMeta<typeof Icon>;
 
-const Template: ComponentStory<typeof Icon> = (args) => <Icon {...args} />;
-
-export const Example = Template.bind({});
-Example.args = {
-    name: "box"
-}
-
-export const Facebook = Template.bind({});
-Facebook.args = {
-    name: "facebook"
+const iconGalleryStorybookStyling = {
+  display: "flex",
+  flexFlow: "wrap",
 };
 
-export const Instagram = Template.bind({});
-Instagram.args = {
-    name: "instagram"
+const iconStorybookStyling = {
+  margin: "8px",
+  border: "1px solid #bebebe",
+  borderRadius: "4px",
+  padding: "16px",
+  width: "144px",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+};
+
+export const Icons: ComponentStory<typeof Icon> = (args: IconProps) => {
+  return (
+    <div style={iconGalleryStorybookStyling as React.CSSProperties}>
+      <div style={iconStorybookStyling as React.CSSProperties}>
+        <Icon name="arrow-left" />
+        <p>arrow-left</p>
+      </div>
+      <div style={iconStorybookStyling as React.CSSProperties}>
+        <Icon name="arrow-right" />
+        <p>arrow-right</p>
+      </div>
+      <div style={iconStorybookStyling as React.CSSProperties}>
+        <Icon name="dot" />
+        <p>dot</p>
+      </div>
+      <div style={iconStorybookStyling as React.CSSProperties}>
+        <Icon name="facebook" />
+        <p>facebook</p>
+      </div>
+      <div style={iconStorybookStyling as React.CSSProperties}>
+        <Icon name="instagram" />
+        <p>instagram</p>
+      </div>
+      <div style={iconStorybookStyling as React.CSSProperties}>
+        <Icon name="list" />
+        <p>list</p>
+      </div>
+      <div style={iconStorybookStyling as React.CSSProperties}>
+        <Icon name="pause" />
+        <p>pause</p>
+      </div>
+      <div style={iconStorybookStyling as React.CSSProperties}>
+        <Icon name="play" />
+        <p>play</p>
+      </div>
+      <div style={iconStorybookStyling as React.CSSProperties}>
+        <Icon name="share" />
+        <p>share</p>
+      </div>
+      <div style={iconStorybookStyling as React.CSSProperties}>
+        <Icon name="x-circle" />
+        <p>x-circle</p>
+      </div>
+    </div>
+  );
 };

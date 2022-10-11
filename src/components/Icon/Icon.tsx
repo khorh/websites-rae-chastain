@@ -1,55 +1,32 @@
-import "./Icon.scss";
-import Box from "../../assets/icons/box.svg";
-import Facebook from "../../assets/icons/facebook.svg";
-import Instagram from "../../assets/icons/instagram.svg";
+import { FC } from "react";
+import styles from "./Icon.module.scss";
+import iconList from "./IconList";
 
-interface IconProps {
-    /**
-    * What is the icon's name?
-    */
-    name?: string;
-};
+export interface IconProps {
+  /**
+   * What is the icon's name?
+   */
+  name: string;
+  /**
+   * What is the icon's size?
+   */
+  size?: "small" | "medium" | "large";
+}
 
-const Icon = ({
-    name, 
-    ...props
-} : IconProps) => {
-    const iconList = [
-        {
-            name: "box",
-            href: "",
-            src: Box,
-            alt: "box icon"
-        },
-        {
-            name: "facebook",
-            href: "https://www.facebook.com/readchastain",
-            src: Facebook,
-            alt: "facebook logo"
-        },
-        {
-            name: "instagram",
-            href: "https://www.instagram.com/readchastain",
-            src: Instagram,
-            alt: "instagram logo"
-        }
-    ];
+const Icon: FC<IconProps> = (props) => {
+  // Defaults
+  const size = props.size ?? "medium";
 
-    const iconFilteredName = iconList.filter(selection => selection.name === name);
+  // Method to filter and show the icon
+  const filteredIcon = iconList.filter((filter) => filter.name === props.name);
 
-    const iconDisplay = iconFilteredName.map(icon => {
-        return (
-            <a key={icon.name} className="icon__container" href={icon.href} target="_blank" rel="noreferrer" {...props}>
-                <img className="icon__image" src={icon.src} alt={icon.alt} />
-            </a>
-        );
-    });
+  const displayIcon = filteredIcon.map((display) => (
+    <display.svg key={props.name} />
+  ));
 
-    return (
-        <>
-            {iconDisplay}
-        </>
-    )
+  return (
+    <div className={`${styles.common} ${styles[size]}`}>{displayIcon}</div>
+  );
 };
 
 export default Icon;
