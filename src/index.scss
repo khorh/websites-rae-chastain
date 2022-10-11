@@ -1,22 +1,22 @@
 @import "./styles/main.scss";
 
 body {
-    margin: 0;
-    > div {
-        @include breakpoint-xxs {
-            @include grid-xxs;
-        }
-        @include breakpoint-xs {
-            @include grid-xs;
-        }
-        @include breakpoint-s {
-            @include grid-s;
-        }
-        @include breakpoint-m {
-            @include grid-m;
-        }
-        @include breakpoint-l {
-            @include grid-l;
-        }
+  margin: 0;
+  > div {
+    @include breakpoint-xxs {
+      @include grid-xxs;
     }
+    @include breakpoint-xs {
+      @include grid-xs;
+    }
+    @include breakpoint-s {
+      @include grid-s;
+    }
+    @include breakpoint-m {
+      @include grid-m;
+    }
+    @include breakpoint-l {
+      @include grid-l;
+    }
+  }
 }
