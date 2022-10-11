@@ -7,7 +7,7 @@ export interface ParagraphProps
   /**
    * What is the size?
    */
-  size: "medium" | "large";
+  size?: "medium" | "large";
   /**
    * What is the weight?
    */
@@ -20,6 +20,7 @@ export interface ParagraphProps
 
 const Paragraph: FC<ParagraphProps> = (props) => {
   // Defaults
+  const size = props.size ?? "medium";
   const weight = props.weight ? `w${props.weight}` : "w400";
   const marginBottom = props.marginBottom
     ? `marginBottom__${props.marginBottom}`
@@ -27,7 +28,7 @@ const Paragraph: FC<ParagraphProps> = (props) => {
 
   return (
     <p
-      className={`${styles.base} ${styles[props.size]} 
+      className={`${styles.base} ${styles[size]} 
         ${styles[weight]} ${marginBottom}`}
     >
       {props.children}
