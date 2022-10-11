@@ -25,7 +25,7 @@ const Icon: FC<IconProps> = (props) => {
   ));
 
   return (
-    <div className={`${styles.common} ${styles.margin__right} ${styles[size]}`}>
+    <div className={`${styles.common} ${styles.marginRight} ${styles[size]}`}>
       {displayIcon}
     </div>
   );
