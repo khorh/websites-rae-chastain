@@ -2,6 +2,10 @@
   font-size: 0;
 }
 
+.margin__right:not(:last-child) {
+  margin-right: 16px;
+}
+
 .small > svg {
   width: 16px;
   height: 16px;
