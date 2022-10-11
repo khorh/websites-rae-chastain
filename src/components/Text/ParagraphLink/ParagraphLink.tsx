@@ -6,7 +6,7 @@ export interface ParagraphLinkProps
   /**
    * What is the size?
    */
-  size: "medium" | "large";
+  size?: "medium" | "large";
   /**
    * What is weight?
    */
@@ -23,13 +23,14 @@ export interface ParagraphLinkProps
 
 const ParagraphLinks: FC<ParagraphLinkProps> = (props) => {
   // Defaults
-  const weight = props.weight ? `w${props.weight}` : "w500";
+  const size = props.size ?? "medium";
+  const weight = props.weight ? `w${props.weight}` : "w400";
   const link = props.link ? `${props.link}` : "";
   const external = props.external ? "_blank" : "_self";
 
   return (
     <a
-      className={`${styles.base} ${styles[props.size]} ${styles[weight]}`}
+      className={`${styles.base} ${styles[size]} ${styles[weight]}`}
       href={link}
       target={external}
     >
