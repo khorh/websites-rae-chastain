@@ -25,7 +25,7 @@ const Icon: FC<IconProps> = (props) => {
     ? `marginRight__${props.marginRight}`
     : "marginRight__0";
 
-  // Method to filter and show the icon
+  // Method to filter and display the icon
   const filteredIcon = iconList.filter((filter) => filter.name === props.name);
 
   const displayIcon = filteredIcon.map((display) => (
