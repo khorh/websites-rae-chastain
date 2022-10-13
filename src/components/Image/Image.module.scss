@@ -1,0 +1,31 @@
+@import "../../styles/main.scss";
+
+.image {
+  &__container {
+    margin-bottom: 8px;
+
+    @include breakpoint-xs {
+      margin-bottom: 12px;
+    }
+
+    @include breakpoint-s {
+      margin-bottom: 16px;
+    }
+
+    @include breakpoint-m {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__hero {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+  }
+}
+
+.books__hero {
+  width: 288px;
+  height: 360px;
+  object-fit: cover;
+}
