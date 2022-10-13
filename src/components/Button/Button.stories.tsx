@@ -9,7 +9,9 @@ export default {
 export const Buttons: ComponentStory<typeof Button> = (args: ButtonProps) => {
   return (
     <>
-      <Button type="primary">Button</Button>
+      <Button type="primary" marginRight={16}>
+        Button
+      </Button>
       <Button type="secondary">Button</Button>
     </>
   );
