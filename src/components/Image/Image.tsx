@@ -1,6 +1,6 @@
 import { FC } from "react";
 import styles from "./Image.module.scss";
-import ImageList from "./ImageList";
+import ImagesData from "../../assets/data/ImagesData.mocked";
 
 interface ImageProps {
   /**
@@ -11,7 +11,7 @@ interface ImageProps {
 
 const Image: FC<ImageProps> = (props) => {
   // Method to filter the image
-  const FilteredImage = ImageList.filter(
+  const FilteredImage = ImagesData.filter(
     (filter) => filter.name === props.name
   );
 

@@ -3,7 +3,7 @@ import PaperPlane from "../../assets/images/paper-plane.jpg";
 import TheClawby from "../../assets/images/the-clawby.jpg";
 import TheOctopusAndTheMermaidCover from "../../assets/images/the-octopus-and-the-mermaid-cover.jpg";
 
-const ImageList = [
+const ImagesData = [
   {
     name: "womanDesigning",
     src: WomanDesigning,
@@ -22,4 +22,4 @@ const ImageList = [
   },
 ];
 
-export default ImageList;
+export default ImagesData;
