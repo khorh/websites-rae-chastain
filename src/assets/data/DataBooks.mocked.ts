@@ -1,4 +1,13 @@
-const BooksData = [
+const DataBooks = [
+  {
+    bookName: "The Clawby",
+    shortDescription:
+      "Join this story about Meadow and a mysterious and misunderstood creature.",
+    imageName: "the-clawby-cover",
+    heroBook: false,
+    orderLink: "",
+    detailsLink: "",
+  },
   {
     bookName: "The Octopus and the Mermaid",
     shortDescription:
@@ -10,4 +19,4 @@ const BooksData = [
   },
 ];
 
-export default BooksData;
+export default DataBooks;
