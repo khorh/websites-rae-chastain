@@ -1,8 +1,13 @@
-import Divider from "../../components/Divider/Divider";
 import BooksHeader from "../../organisms/BooksHeader/BooksHeader";
+import BooksMain from "../../organisms/BooksMain/BooksMain";
 
 const Books = () => {
-  return <BooksHeader />;
+  return (
+    <>
+      <BooksHeader />
+      <BooksMain />
+    </>
+  );
 };
 
 export default Books;
