@@ -4,11 +4,11 @@ import Button from "../../components/Button/Button";
 import Heading from "../../components/Text/Heading/Heading";
 import Image from "../../components/Image/Image";
 import Paragraph from "../../components/Text/Paragraph/Paragraph";
-import BooksData from "../../assets/data/BooksData.mocked";
+import DataBooks from "../../assets/data/DataBooks.mocked";
 
 const BooksHeader: FC = () => {
   // Method to filter hero book
-  const filteredHeroBook = BooksData.filter(
+  const filteredHeroBook = DataBooks.filter(
     (filter) => filter.heroBook === true
   );
 
