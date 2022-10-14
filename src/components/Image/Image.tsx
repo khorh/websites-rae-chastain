@@ -10,11 +10,12 @@ interface ImageProps {
 }
 
 const Image: FC<ImageProps> = (props) => {
-  // Method to filter and display the image
+  // Method to filter the image
   const FilteredImage = ImageList.filter(
     (filter) => filter.name === props.name
   );
 
+  // Method to display the image
   const DisplayImage = FilteredImage.map((display) => {
     return (
       <img className={styles.books__hero} src={display.src} alt={display.alt} />

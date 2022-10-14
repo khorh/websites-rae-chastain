@@ -25,9 +25,10 @@ const Icon: FC<IconProps> = (props) => {
     ? `marginRight__${props.marginRight}`
     : "marginRight__0";
 
-  // Method to filter and display the icon
+  // Method to filter the icon
   const filteredIcon = iconList.filter((filter) => filter.name === props.name);
 
+  // Method to display the icon
   const displayIcon = filteredIcon.map((display) => (
     <display.svg key={props.name} />
   ));
