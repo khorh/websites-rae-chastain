@@ -1,6 +1,6 @@
 import WomanDesigning from "../../assets/images/woman-designing.jpg";
 import PaperPlane from "../../assets/images/paper-plane.jpg";
-import TheClawby from "../../assets/images/the-clawby.jpg";
+import TheClawbyCover from "../../assets/images/the-clawby-cover.jpg";
 import TheOctopusAndTheMermaidCover from "../../assets/images/the-octopus-and-the-mermaid-cover.jpg";
 
 const DataImages = [
@@ -14,7 +14,11 @@ const DataImages = [
     src: PaperPlane,
     alt: "people throwing paper plane",
   },
-  { name: "the-clawby", src: TheClawby, alt: "the clawby book cover" },
+  {
+    name: "the-clawby-cover",
+    src: TheClawbyCover,
+    alt: "the clawby book cover",
+  },
   {
     name: "the-octopus-and-the-mermaid-cover",
     src: TheOctopusAndTheMermaidCover,
