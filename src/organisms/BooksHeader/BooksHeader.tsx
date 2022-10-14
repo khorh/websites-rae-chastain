@@ -4,9 +4,16 @@ import Button from "../../components/Button/Button";
 import Heading from "../../components/Text/Heading/Heading";
 import Image from "../../components/Image/Image";
 import Paragraph from "../../components/Text/Paragraph/Paragraph";
+import BooksData from "../../assets/data/BooksData.mocked";
 
 const BooksHeader: FC = () => {
-  return (
+  // Method to filter hero book
+  const filteredHeroBook = BooksData.filter(
+    (filter) => filter.heroBook === true
+  );
+
+  // Method to display hero book
+  const displayHeroBook = filteredHeroBook.map((display) => (
     <header className={styles.header}>
       <div className={styles.heading}>
         <Heading type="h1" font="primary" marginBottom={24}>
@@ -14,14 +21,13 @@ const BooksHeader: FC = () => {
         </Heading>
       </div>
       <div className={styles.content}>
-        <Image name="the-octopus-and-the-mermaid" />
+        <Image name={display.imageName} />
         <div className={styles.content__text}>
           <Heading type="h2" font="secondary" marginBottom={16}>
-            The Octopus and the Mermaid
+            {display.bookName}
           </Heading>
           <Paragraph size="large" marginBottom={24}>
-            Join this enchanting story of how a lonely coconut octopus is
-            befriended by a beautiful mermaid.
+            {display.shortDescription}
           </Paragraph>
           <div>
             <Button type="primary" marginRight={16}>
@@ -32,7 +38,9 @@ const BooksHeader: FC = () => {
         </div>
       </div>
     </header>
-  );
+  ));
+
+  return <>{displayHeroBook}</>;
 };
 
 export default BooksHeader;
