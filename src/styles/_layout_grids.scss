@@ -2,14 +2,14 @@
 // Phone
 @mixin grid-xxs {
   display: grid;
-  grid-template-columns: 16px repeat(4, 1fr) 16px;
+  grid-template-columns: 0 repeat(4, 1fr) 0;
   column-gap: 16px;
 }
 
 // Tablet
 @mixin grid-xs {
   display: grid;
-  grid-template-columns: 32px repeat(8, 1fr) 32px;
+  grid-template-columns: 0 repeat(8, 1fr) 0;
   column-gap: 16px;
 }
 
