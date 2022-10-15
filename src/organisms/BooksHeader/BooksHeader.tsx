@@ -21,7 +21,7 @@ const BooksHeader: FC = () => {
         </Heading>
       </div>
       <div className={styles.content}>
-        <Image name={display.imageName} />
+        <Image type="books__hero" name={display.imageName} />
         <div className={styles.content__text}>
           <Heading type="h2" font="secondary" marginBottom={16}>
             {display.bookName}

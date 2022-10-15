@@ -4,6 +4,10 @@ import DataImages from "../../assets/data/DataImages.mocked";
 
 interface ImageProps {
   /**
+   * What is the type of image?
+   */
+  type: "books__hero" | "books__other";
+  /**
    * What is the image's name?
    */
   name: string;
@@ -20,7 +24,7 @@ const Image: FC<ImageProps> = (props) => {
     return (
       <img
         key={display.name}
-        className={styles.books__hero}
+        className={styles[props.type]}
         src={display.src}
         alt={display.alt}
       />

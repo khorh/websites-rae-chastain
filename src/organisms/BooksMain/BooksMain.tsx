@@ -19,7 +19,7 @@ const BooksMain: FC = () => {
   // Method to display other books
   const displayOtherBooks = sortOtherBooks.map((display) => (
     <div key={display.bookName} className={styles.content__book}>
-      <Image name={display.imageName} />
+      <Image type="books__other" name={display.imageName} />
     </div>
   ));
 

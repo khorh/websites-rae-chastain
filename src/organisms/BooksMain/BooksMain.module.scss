@@ -1,21 +1,24 @@
 @import "../../styles/main.scss";
 
 .main {
-  grid-column: 2 / -2;
-  margin-bottom: $spacing-48;
+  grid-column: 1 / -1;
+  margin: 0 $spacing-16 $spacing-48;
 }
 
 .content {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+
+  @include breakpoint-xs {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .content__book {
   margin-bottom: $spacing-16;
   background-color: $color-primary-light;
   padding: $spacing-32 $spacing-24;
-  width: fit-content;
-  &:not(last-child) {
-    margin-right: $spacing-16;
-  }
+  width: 240px;
+  height: 296px;
 }
