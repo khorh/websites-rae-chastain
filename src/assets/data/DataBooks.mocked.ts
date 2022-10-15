@@ -1,5 +1,21 @@
 const DataBooks = [
   {
+    bookName: "Boys will be Boys",
+    shortDescription: "Lorem ipsum.",
+    imageName: "boys-will-be-boys-cover",
+    heroBook: false,
+    orderLink: "",
+    detailsLink: "",
+  },
+  {
+    bookName: "Breezy No Prob-Llama",
+    shortDescription: "Lorem ipsum.",
+    imageName: "breezy-no-prob-llama-cover",
+    heroBook: false,
+    orderLink: "",
+    detailsLink: "",
+  },
+  {
     bookName: "The Clawby",
     shortDescription:
       "Join this story about Meadow and a mysterious and misunderstood creature.",
