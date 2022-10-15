@@ -1,16 +1,16 @@
 // Layout > Grids
 // Phone
 @mixin grid-xxs {
-    display: grid;
-    grid-template-columns: 16px repeat(4, 1fr) 16px;
-    column-gap: 16px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 16px;
 }
 
 // Tablet
 @mixin grid-xs {
-    display: grid;
-    grid-template-columns: 32px repeat(8, 1fr) 32px;
-    column-gap: 16px;
+  display: grid;
+  grid-template-columns: 32px repeat(8, 1fr) 32px;
+  column-gap: 16px;
 }
 
 // Large tablet
