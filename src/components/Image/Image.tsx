@@ -18,7 +18,12 @@ const Image: FC<ImageProps> = (props) => {
   // Method to display the image
   const DisplayImage = FilteredImage.map((display) => {
     return (
-      <img className={styles.books__hero} src={display.src} alt={display.alt} />
+      <img
+        key={display.name}
+        className={styles.books__hero}
+        src={display.src}
+        alt={display.alt}
+      />
     );
   });
 

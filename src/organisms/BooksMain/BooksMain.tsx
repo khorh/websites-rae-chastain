@@ -12,13 +12,13 @@ const BooksMain: FC = () => {
 
   // Method to sort other books starting from the latest release date
   const sortOtherBooks = filteredOtherBooks.sort(
-    (a: any, b: any) =>
+    (a, b) =>
       new Date(a.publishDate).getTime() - new Date(b.publishDate).getTime()
   );
 
   // Method to display other books
   const displayOtherBooks = sortOtherBooks.map((display) => (
-    <div className={styles.content__book}>
+    <div key={display.bookName} className={styles.content__book}>
       <Image name={display.imageName} />
     </div>
   ));
