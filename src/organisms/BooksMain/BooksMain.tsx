@@ -13,7 +13,7 @@ const BooksMain: FC = () => {
   // Method to sort other books starting from the latest release date
   const sortOtherBooks = filteredOtherBooks.sort(
     (a, b) =>
-      new Date(a.publishDate).getTime() - new Date(b.publishDate).getTime()
+      new Date(a.releaseDate).getTime() - new Date(b.releaseDate).getTime()
   );
 
   // Method to display other books
