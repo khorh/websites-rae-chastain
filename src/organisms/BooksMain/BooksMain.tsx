@@ -10,11 +10,15 @@ const BooksMain: FC = () => {
     (filter) => filter.heroBook === false
   );
 
-  console.log(filteredOtherBooks);
+  // Method to sort other books starting from the latest release date
+  const sortOtherBooks = filteredOtherBooks.sort(
+    (a: any, b: any) =>
+      new Date(a.publishDate).getTime() - new Date(b.publishDate).getTime()
+  );
 
   // Method to display other books
-  const displayOtherBooks = filteredOtherBooks.map((display) => (
-    <div>
+  const displayOtherBooks = sortOtherBooks.map((display) => (
+    <div className={styles.content__book}>
       <Image name={display.imageName} />
     </div>
   ));
@@ -22,7 +26,7 @@ const BooksMain: FC = () => {
   return (
     <main className={styles.main}>
       <Divider marginBottom={32} />
-      {displayOtherBooks}
+      <div className={styles.content}>{displayOtherBooks}</div>
     </main>
   );
 };
