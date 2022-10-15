@@ -14,33 +14,35 @@ const BooksHeader: FC = () => {
 
   // Method to display hero book
   const displayHeroBook = filteredHeroBook.map((display) => (
-    <header key={display.bookName} className={styles.header}>
+    <div key={display.bookName} className={styles.content}>
+      <Image type="books__hero" name={display.imageName} />
+      <div className={styles.content__text}>
+        <Heading type="h2" font="secondary" marginBottom={16}>
+          {display.bookName}
+        </Heading>
+        <Paragraph size="large" marginBottom={24}>
+          {display.shortDescription}
+        </Paragraph>
+        <div>
+          <Button type="primary" marginRight={16}>
+            Order
+          </Button>
+          <Button type="secondary">Details</Button>
+        </div>
+      </div>
+    </div>
+  ));
+
+  return (
+    <header className={styles.header}>
       <div className={styles.heading}>
         <Heading type="h1" font="primary" marginBottom={24}>
           Books
         </Heading>
       </div>
-      <div className={styles.content}>
-        <Image type="books__hero" name={display.imageName} />
-        <div className={styles.content__text}>
-          <Heading type="h2" font="secondary" marginBottom={16}>
-            {display.bookName}
-          </Heading>
-          <Paragraph size="large" marginBottom={24}>
-            {display.shortDescription}
-          </Paragraph>
-          <div>
-            <Button type="primary" marginRight={16}>
-              Order
-            </Button>
-            <Button type="secondary">Details</Button>
-          </div>
-        </div>
-      </div>
+      {displayHeroBook}
     </header>
-  ));
-
-  return <>{displayHeroBook}</>;
+  );
 };
 
 export default BooksHeader;
