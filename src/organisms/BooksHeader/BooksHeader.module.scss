@@ -1,7 +1,7 @@
 @import "../../styles/main.scss";
 
 .header {
-  grid-column: 1 / -1;
+  grid-column: 2 / -2;
   margin-bottom: $spacing-48;
   @include breakpoint-s {
     grid-column: 4 / -4;

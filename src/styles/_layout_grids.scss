@@ -2,7 +2,7 @@
 // Phone
 @mixin grid-xxs {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 16px repeat(4, 1fr) 16px;
   column-gap: 16px;
 }
 
