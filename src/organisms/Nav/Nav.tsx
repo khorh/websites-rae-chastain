@@ -9,7 +9,7 @@ const Nav: FC<navMenuContentProps> = () => {
   const navMenuContent = [
     {
       label: "Books",
-      link: "/home",
+      link: "/",
     },
     {
       label: "Illustrations",
