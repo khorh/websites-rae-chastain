@@ -1,10 +1,10 @@
 import { FC } from "react";
 import styles from "./BooksHeader.module.scss";
-import Button from "../../components/Button/Button";
-import Heading from "../../components/Text/Heading/Heading";
-import Image from "../../components/Image/Image";
-import Paragraph from "../../components/Text/Paragraph/Paragraph";
-import DataBooks from "../../assets/data/DataBooks.mocked";
+import Button from "../../../components/Button/Button";
+import Heading from "../../../components/Text/Heading/Heading";
+import Image from "../../../components/Image/Image";
+import Paragraph from "../../../components/Text/Paragraph/Paragraph";
+import DataBooks from "../../../assets/data/DataBooks.mocked";
 
 const BooksHeader: FC = () => {
   // Method to filter hero book

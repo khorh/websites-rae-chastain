@@ -1,4 +1,4 @@
-import BooksHeader from "../../organisms/BooksHeader/BooksHeader";
+import BooksHeader from "./BooksHeader/BooksHeader";
 import BooksMain from "../../organisms/BooksMain/BooksMain";
 
 const Books = () => {
