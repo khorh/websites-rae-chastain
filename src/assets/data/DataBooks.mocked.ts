@@ -7,6 +7,9 @@ const DataBooks = [
     heroBook: false,
     orderLink: "",
     detailsLink: "",
+    shareLink: "",
+    synopsisPassage: "",
+    synopsisPublisher: "",
   },
   {
     bookName: "Breezy No Prob-Llama",
@@ -16,6 +19,9 @@ const DataBooks = [
     heroBook: false,
     orderLink: "",
     detailsLink: "",
+    shareLink: "",
+    synopsisPassage: "",
+    synopsisPublisher: "",
   },
   {
     bookName: "The Clawby",
@@ -26,6 +32,9 @@ const DataBooks = [
     heroBook: false,
     orderLink: "",
     detailsLink: "",
+    shareLink: "",
+    synopsisPassage: "",
+    synopsisPublisher: "",
   },
   {
     bookName: "The Octopus and the Mermaid",
@@ -36,6 +45,9 @@ const DataBooks = [
     heroBook: true,
     orderLink: "",
     detailsLink: "",
+    shareLink: "",
+    synopsisPassage: "",
+    synopsisPublisher: "",
   },
 ];
 
