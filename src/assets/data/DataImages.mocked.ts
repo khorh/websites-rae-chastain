@@ -7,34 +7,40 @@ import TheOctopusAndTheMermaidCover from "../../assets/images/the-octopus-and-th
 
 const DataImages = [
   {
+    id: "image001",
     name: "womanDesigning",
     src: WomanDesigning,
     alt: "woman designing",
   },
   {
+    id: "image002",
     name: "paperPlane",
     src: PaperPlane,
     alt: "people throwing paper plane",
   },
   {
-    name: "boys-will-be-boys-cover",
-    src: BoysWillBeBoysCover,
-    alt: "boys will be boys placeholder cover",
-  },
-  {
-    name: "breezy-no-prob-llama-cover",
-    src: BreezyNoProbLlamaCover,
-    alt: "breezy no prob llama placeholder cover",
-  },
-  {
+    id: "image003",
     name: "the-clawby-cover",
     src: TheClawbyCover,
     alt: "the clawby book cover",
   },
   {
+    id: "image004",
     name: "the-octopus-and-the-mermaid-cover",
     src: TheOctopusAndTheMermaidCover,
     alt: "the octopus and the mermaid book cover",
+  },
+  {
+    id: "image005",
+    name: "breezy-no-prob-llama-cover",
+    src: BreezyNoProbLlamaCover,
+    alt: "breezy no prob llama placeholder cover",
+  },
+  {
+    id: "image006",
+    name: "boys-will-be-boys-cover",
+    src: BoysWillBeBoysCover,
+    alt: "boys will be boys placeholder cover",
   },
 ];
 

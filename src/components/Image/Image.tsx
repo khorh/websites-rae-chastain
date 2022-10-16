@@ -23,7 +23,7 @@ const Image: FC<ImageProps> = (props) => {
   const DisplayImage = FilteredImage.map((display) => {
     return (
       <img
-        key={display.name}
+        key={display.id}
         className={styles[props.type]}
         src={display.src}
         alt={display.alt}
