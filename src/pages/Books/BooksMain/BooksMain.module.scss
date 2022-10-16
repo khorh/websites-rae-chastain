@@ -1,4 +1,4 @@
-@import "../../styles/main.scss";
+@import "../../../styles/main.scss";
 
 .main {
   grid-column: 2 / -2;
@@ -22,4 +22,10 @@
   background-color: $color-primary-light;
   padding: $spacing-32 $spacing-24;
   font-size: 0;
+}
+
+.content__bookStatus {
+  background-color: $color-secondary-light;
+  padding: $spacing-8 $spacing-16;
+  text-align: center;
 }
