@@ -66,6 +66,19 @@ const DataBooks = [
     synopsisPassage: "",
     synopsisPublisher: "",
   },
+  {
+    id: "book006",
+    name: "Sir Mousealot",
+    shortDescription: "Lorem ipsum.",
+    releaseDate: "1 Jan 26",
+    imageName: "sir-mousealot-cover",
+    heroBook: false,
+    orderLink: "",
+    detailsLink: "",
+    shareLink: "",
+    synopsisPassage: "",
+    synopsisPublisher: "",
+  },
 ];
 
 export default DataBooks;

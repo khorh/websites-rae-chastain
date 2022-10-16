@@ -5,6 +5,7 @@ import BreezyNoProbLlamaCover from "../../assets/images/breezy-no-prob-llama-cov
 import TheClawbyCover from "../../assets/images/the-clawby-cover.jpg";
 import TheOctopusAndTheMermaidCover from "../../assets/images/the-octopus-and-the-mermaid-cover.jpg";
 import TheTurtlesNewShellCover from "../../assets/images/the-turtles-new-shell-cover.jpg";
+import SirMousealotCover from "../../assets/images/sir-mousealot-cover.jpg";
 
 const DataImages = [
   {
@@ -55,6 +56,13 @@ const DataImages = [
     name: "the-turtles-new-shell-cover",
     src: TheTurtlesNewShellCover,
     alt: "the turtle's new shell placeholder cover",
+  },
+  {
+    id: "image007",
+    category: "books",
+    name: "sir-mousealot-cover",
+    src: SirMousealotCover,
+    alt: "sir mousealot placeholder cover",
   },
 ];
 
