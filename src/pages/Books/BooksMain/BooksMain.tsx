@@ -28,7 +28,7 @@ const BooksMain: FC = () => {
         <Image name={display.imageName} />
         <div className={styles.content__bookStatus}>
           <Paragraph size="large" weight={500}>
-            {display.bookName}
+            {display.name}
           </Paragraph>
           <Paragraph weight={500}>{bookStatus}</Paragraph>
         </div>

@@ -18,7 +18,7 @@ const BooksHeader: FC = () => {
       <Image name={display.imageName} />
       <div className={styles.content__text}>
         <Heading type="h2" font="secondary" marginBottom={16}>
-          {display.bookName}
+          {display.name}
         </Heading>
         <Paragraph size="large" marginBottom={24}>
           {display.shortDescription}

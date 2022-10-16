@@ -1,7 +1,7 @@
 const DataBooks = [
   {
     id: "book001",
-    bookName: "The Clawby",
+    name: "The Clawby",
     shortDescription:
       "Join this story about Meadow and a mysterious and misunderstood creature.",
     releaseDate: "1 Oct 21",
@@ -15,7 +15,7 @@ const DataBooks = [
   },
   {
     id: "book002",
-    bookName: "The Octopus and the Mermaid",
+    name: "The Octopus and the Mermaid",
     shortDescription:
       "Join this enchanting story of how a lonely coconut octopus is befriended by a beautiful mermaid.",
     releaseDate: "27 Jan 22",
@@ -29,7 +29,7 @@ const DataBooks = [
   },
   {
     id: "book003",
-    bookName: "Breezy No Prob-Llama",
+    name: "Breezy No Prob-Llama",
     shortDescription: "Lorem ipsum.",
     releaseDate: "1 Jan 23",
     imageName: "breezy-no-prob-llama-cover",
@@ -42,7 +42,7 @@ const DataBooks = [
   },
   {
     id: "book004",
-    bookName: "Boys will be Boys",
+    name: "Boys will be Boys",
     shortDescription: "Lorem ipsum.",
     releaseDate: "1 Jan 24",
     imageName: "boys-will-be-boys-cover",
