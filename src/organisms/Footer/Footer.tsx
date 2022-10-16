@@ -4,6 +4,10 @@ import Icon from "../../components/Icon/Icon";
 import Paragraph from "../../components/Text/Paragraph/Paragraph";
 
 const Footer = () => {
+  // Social media links
+  const facebookLink = "https://www.facebook.com/readchastain";
+  const instagramLink = "https://www.instagram.com/readchastain/";
+
   return (
     <footer className={styles.container}>
       <Divider marginBottom={24} />
