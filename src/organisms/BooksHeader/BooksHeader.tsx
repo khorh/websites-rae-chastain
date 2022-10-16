@@ -14,7 +14,7 @@ const BooksHeader: FC = () => {
 
   // Method to display hero book
   const displayHeroBook = filteredHeroBook.map((display) => (
-    <div key={display.bookName} className={styles.content}>
+    <div key={display.id} className={styles.content}>
       <Image type="books__hero" name={display.imageName} />
       <div className={styles.content__text}>
         <Heading type="h2" font="secondary" marginBottom={16}>
