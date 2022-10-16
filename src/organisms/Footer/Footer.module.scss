@@ -10,4 +10,15 @@
 
 .container__icons {
   display: flex;
+  cursor: pointer;
+}
+
+.container__icons__link {
+  color: $color-base-dark;
+  &:hover {
+    color: $color-primary-dark;
+  }
+  &:active {
+    color: $color-secondary-main;
+  }
 }

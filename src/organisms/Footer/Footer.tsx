@@ -5,7 +5,7 @@ import Paragraph from "../../components/Text/Paragraph/Paragraph";
 
 const Footer = () => {
   // Social media links
-  const facebookLink = "https://www.facebook.com/readchastain";
+  const facebookLink = "https://www.facebook.com/readchastain/";
   const instagramLink = "https://www.instagram.com/readchastain/";
 
   return (
@@ -15,8 +15,20 @@ const Footer = () => {
         © Rae Chastain
       </Paragraph>
       <div className={styles.container__icons}>
-        <Icon name="facebook" size="small" marginRight={16} />
-        <Icon name="instagram" size="small" />
+        <a
+          className={styles.container__icons__link}
+          href={facebookLink}
+          target="_blank"
+        >
+          <Icon name="facebook" size="small" marginRight={16} />
+        </a>
+        <a
+          className={styles.container__icons__link}
+          href={instagramLink}
+          target="_blank"
+        >
+          <Icon name="instagram" size="small" />
+        </a>
       </div>
     </footer>
   );
