@@ -22,6 +22,12 @@
   background-color: $color-primary-light;
   padding: $spacing-32 $spacing-24;
   font-size: 0;
+  img {
+    background-color: $color-base-light;
+    width: 240px;
+    height: 296px;
+    object-fit: contain;
+  }
 }
 
 .content__bookStatus {

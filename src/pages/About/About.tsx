@@ -30,7 +30,7 @@ const About = () => {
 
   return (
     <main className="about">
-      <Image type="books__hero" name="womanDesigning" />
+      <Image name="womanDesigning" />
       <Heading type="h1" font="primary">
         About
       </Heading>

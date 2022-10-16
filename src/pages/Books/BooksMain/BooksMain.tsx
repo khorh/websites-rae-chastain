@@ -25,7 +25,7 @@ const BooksMain: FC = () => {
     const bookStatus = bookReleaseDate > dateNow ? "Coming soon!" : "Out now!";
     return (
       <div key={display.id} className={styles.content__book}>
-        <Image type="books__other" name={display.imageName} />
+        <Image name={display.imageName} />
         <div className={styles.content__bookStatus}>
           <Paragraph size="large" weight={500}>
             {display.bookName}

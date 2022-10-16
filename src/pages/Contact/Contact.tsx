@@ -24,7 +24,7 @@ const Contact = () => {
 
   return (
     <main className="contact">
-      <Image type="books__hero" name="paperPlane" />
+      <Image name="paperPlane" />
       <Heading type="h1" font="primary">
         Contact
       </Heading>

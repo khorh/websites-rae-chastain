@@ -22,6 +22,9 @@
   align-items: center;
   margin: 0 $spacing-16;
   img {
+    width: 288px;
+    height: 360px;
+    object-fit: cover;
     margin-bottom: $spacing-24;
   }
 
