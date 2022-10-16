@@ -53,6 +53,19 @@ const DataBooks = [
     synopsisPassage: "",
     synopsisPublisher: "",
   },
+  {
+    id: "book005",
+    name: "The Turtle's New Shell",
+    shortDescription: "Lorem ipsum.",
+    releaseDate: "1 Jan 25",
+    imageName: "the-turtles-new-shell-cover",
+    heroBook: false,
+    orderLink: "",
+    detailsLink: "",
+    shareLink: "",
+    synopsisPassage: "",
+    synopsisPublisher: "",
+  },
 ];
 
 export default DataBooks;
