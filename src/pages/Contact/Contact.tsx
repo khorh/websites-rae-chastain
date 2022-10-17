@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import StoryblokClient from "storyblok-js-client";
-import "./Contact.scss";
+import styles from "./Contact.module.scss";
+import Image from "../../components/Image/Image";
 import Heading from "../../components/Text/Heading/Heading";
 import Paragraph from "../../components/Text/Paragraph/Paragraph";
-import Image from "../../components/Image/Image";
 
 let Storyblok = new StoryblokClient({
   accessToken: "4UDPA39TEehWMG9eE631oAtt",
@@ -23,15 +23,21 @@ const Contact = () => {
   }, []);
 
   return (
-    <main className="contact">
-      <Image name="paperPlane" />
-      <Heading type="h1" font="primary">
-        Contact
-      </Heading>
-      <section className="contact__text">
-        <Paragraph size="medium">{contactData}</Paragraph>
-      </section>
-    </main>
+    <>
+      <header className={styles.header}>
+        <div className={styles.heading}>
+          <Heading type="h1" font="primary" marginBottom={24}>
+            Contact
+          </Heading>
+        </div>
+      </header>
+      <main className={styles.main}>
+        <Image name="paperPlane" />
+        <div>
+          <Paragraph>{contactData}</Paragraph>
+        </div>
+      </main>
+    </>
   );
 };
 
