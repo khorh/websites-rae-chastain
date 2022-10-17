@@ -39,8 +39,10 @@ const About = () => {
       <main className={styles.main}>
         <Image name="womanDesigning" />
         <div>
-          <Paragraph marginBottom={16}>{aboutBooksData}</Paragraph>
-          <Paragraph>{aboutIllustrationsData}</Paragraph>
+          <Paragraph size="large" marginBottom={16}>
+            {aboutBooksData}
+          </Paragraph>
+          <Paragraph size="large">{aboutIllustrationsData}</Paragraph>
         </div>
       </main>
     </>
