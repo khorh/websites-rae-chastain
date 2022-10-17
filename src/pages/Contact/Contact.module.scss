@@ -20,4 +20,8 @@
     margin-bottom: $spacing-16;
     width: 100%;
   }
+
+  @include breakpoint-s {
+    grid-column: 3 / -3;
+  }
 }

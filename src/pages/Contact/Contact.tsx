@@ -34,7 +34,7 @@ const Contact = () => {
       <main className={styles.main}>
         <Image name="paperPlane" />
         <div>
-          <Paragraph>{contactData}</Paragraph>
+          <Paragraph size="large">{contactData}</Paragraph>
         </div>
       </main>
     </>
