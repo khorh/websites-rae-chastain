@@ -1,8 +1,8 @@
 import { FC } from "react";
 import styles from "./Illustrations.module.scss";
+import Heading from "../../components/Text/Heading/Heading";
 import Image from "../../components/Image/Image";
 import DataImages from "../../assets/data/DataImages.mocked";
-import Heading from "../../components/Text/Heading/Heading";
 
 const Illustrations: FC = () => {
   // Method to filter images with category as illustrations
