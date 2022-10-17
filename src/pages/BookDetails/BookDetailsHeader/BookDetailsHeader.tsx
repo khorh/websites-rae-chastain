@@ -1,6 +1,6 @@
 import { FC } from "react";
-import Button from "../../components/Button/Button";
-import Heading from "../../components/Text/Heading/Heading";
+import Button from "../../../components/Button/Button";
+import Heading from "../../../components/Text/Heading/Heading";
 
 const BookDetailsHeader: FC = () => {
   return (
