@@ -1,0 +1,23 @@
+@import "../../styles/main";
+
+.header {
+  grid-column: 2 / -2;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+
+  @include breakpoint-xs {
+    display: none;
+  }
+}
+
+.main {
+  grid-column: 2 / -2;
+  margin: $spacing-0 $spacing-0 $spacing-48;
+  img {
+    margin-bottom: $spacing-16;
+    width: 100%;
+  }
+}

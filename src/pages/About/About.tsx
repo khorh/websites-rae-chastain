@@ -1,10 +1,9 @@
 import { useState, useEffect } from "react";
 import StoryblokClient from "storyblok-js-client";
-import "./About.scss";
-import RaeChastain from "../../assets/images/rae-chastain.jpg";
+import styles from "./About.module.scss";
+import Image from "../../components/Image/Image";
 import Heading from "../../components/Text/Heading/Heading";
 import Paragraph from "../../components/Text/Paragraph/Paragraph";
-import Image from "../../components/Image/Image";
 
 let Storyblok = new StoryblokClient({
   accessToken: "4UDPA39TEehWMG9eE631oAtt",
@@ -29,21 +28,22 @@ const About = () => {
   }, []);
 
   return (
-    <main className="about">
-      <Image name="womanDesigning" />
-      <Heading type="h1" font="primary">
-        About
-      </Heading>
-      <section className="about__text">
-        <Paragraph size="medium">{aboutBooksData}</Paragraph>
-        <Paragraph size="medium">{aboutIllustrationsData}</Paragraph>
-      </section>
-      <img
-        className="about__author"
-        src={RaeChastain}
-        alt="photo of rae chastain"
-      />
-    </main>
+    <>
+      <header className={styles.header}>
+        <div className={styles.heading}>
+          <Heading type="h1" font="primary" marginBottom={24}>
+            About
+          </Heading>
+        </div>
+      </header>
+      <main className={styles.main}>
+        <Image name="womanDesigning" />
+        <div>
+          <Paragraph marginBottom={16}>{aboutBooksData}</Paragraph>
+          <Paragraph>{aboutIllustrationsData}</Paragraph>
+        </div>
+      </main>
+    </>
   );
 };
 
