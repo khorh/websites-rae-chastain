@@ -5,7 +5,7 @@ import DataImages from "../../assets/data/DataImages.mocked";
 import Heading from "../../components/Text/Heading/Heading";
 
 const Illustrations: FC = () => {
-  // Method to filter images with category illustrations
+  // Method to filter images with category as illustrations
   const filterImages = DataImages.filter(
     (filter) => filter.category === "illustrations"
   );
@@ -20,14 +20,18 @@ const Illustrations: FC = () => {
   });
 
   return (
-    <main className={styles.main}>
-      <div className={styles.heading}>
-        <Heading type="h1" font="primary" marginBottom={24}>
-          Illustrations
-        </Heading>
-      </div>
-      <div className={styles.content}>{displayIllustrations}</div>
-    </main>
+    <>
+      <header className={styles.header}>
+        <div className={styles.heading}>
+          <Heading type="h1" font="primary" marginBottom={24}>
+            Illustrations
+          </Heading>
+        </div>
+      </header>
+      <main className={styles.main}>
+        <div className={styles.content}>{displayIllustrations}</div>
+      </main>
+    </>
   );
 };
 
