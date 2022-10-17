@@ -2,7 +2,7 @@
 
 .container {
   grid-column: 2 / -2;
-  margin: 0 $spacing-16 $spacing-32;
+  padding: 0 0 $spacing-32;
   display: flex;
   flex-direction: column;
   align-items: center;
