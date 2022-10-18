@@ -35,15 +35,13 @@ const About = () => {
             About
           </Heading>
         </div>
+        <Image name="womanDesigning" />
       </header>
       <main className={styles.main}>
-        <Image name="womanDesigning" />
-        <div>
-          <Paragraph size="large" marginBottom={16}>
-            {aboutBooksData}
-          </Paragraph>
-          <Paragraph size="large">{aboutIllustrationsData}</Paragraph>
-        </div>
+        <Paragraph size="large" marginBottom={16}>
+          {aboutBooksData}
+        </Paragraph>
+        <Paragraph size="large">{aboutIllustrationsData}</Paragraph>
       </main>
     </>
   );

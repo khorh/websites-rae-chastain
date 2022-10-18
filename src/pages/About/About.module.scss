@@ -2,6 +2,13 @@
 
 .header {
   grid-column: 2 / -2;
+  @include breakpoint-xs {
+    grid-column: 3 / -3;
+  }
+  img {
+    margin-bottom: $spacing-16;
+    width: 100%;
+  }
 }
 
 .heading {
@@ -16,12 +23,8 @@
 .main {
   grid-column: 2 / -2;
   margin: $spacing-0 $spacing-0 $spacing-48;
-  img {
-    margin-bottom: $spacing-16;
-    width: 100%;
-  }
 
-  @include breakpoint-s {
+  @include breakpoint-xs {
     grid-column: 3 / -3;
   }
 }
