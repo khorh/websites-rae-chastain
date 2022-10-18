@@ -20,12 +20,12 @@
 
 .content__book {
   background-color: $color-primary-light;
-  padding: $spacing-32 $spacing-24;
+  padding: $spacing-24 $spacing-16;
   font-size: 0;
   img {
     background-color: $color-base-light;
-    width: 240px;
-    height: 296px;
+    width: 256px;
+    height: 312px;
     object-fit: contain;
   }
 }
