@@ -20,10 +20,11 @@
 
 .content__book {
   background-color: $color-primary-light;
-  padding: $spacing-24 $spacing-16;
+  padding: $spacing-16;
   font-size: 0;
   img {
-    background-color: $color-base-light;
+    padding-bottom: $spacing-16;
+    background-color: $color-primary-light;
     width: 256px;
     height: 320px;
     object-fit: contain;
@@ -31,7 +32,7 @@
 }
 
 .content__bookStatus {
-  background-color: $color-secondary-light;
+  background-color: $color-base-light;
   padding: $spacing-8 $spacing-16;
   text-align: center;
 }
