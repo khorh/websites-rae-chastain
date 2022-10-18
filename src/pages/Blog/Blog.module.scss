@@ -2,6 +2,10 @@
 
 .header {
   grid-column: 2 / -2;
+
+  @include breakpoint-xs {
+    grid-column: 3 / -3;
+  }
 }
 
 .heading {
@@ -19,6 +23,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include breakpoint-xs {
+    grid-column: 3 / -3;
+  }
 }
 
 .content {
