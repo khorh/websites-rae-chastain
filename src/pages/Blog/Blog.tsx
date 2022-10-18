@@ -1,14 +1,20 @@
 import { FC } from "react";
 import styles from "./Blog.module.scss";
-import Heading from "../../components/Text/Heading/Heading";
-import DataBlog from "../../assets/data/DataBlog.mocked";
 import Image from "../../components/Image/Image";
 import Icon from "../../components/Icon/Icon";
+import Heading from "../../components/Text/Heading/Heading";
 import Paragraph from "../../components/Text/Paragraph/Paragraph";
+import DataBlog from "../../assets/data/DataBlog.mocked";
 
 const Blog: FC = () => {
+  // Method to sort blog posts
+  const sortPosts = DataBlog.sort(
+    (a, b) =>
+      new Date(b.datePosted).getTime() - new Date(a.datePosted).getTime()
+  );
+
   // Method to display blog posts
-  const displayBlogs = DataBlog.map((display) => {
+  const displayPosts = sortPosts.map((display) => {
     return (
       <div className={styles.content}>
         <Image name={display.imageName} />
@@ -39,7 +45,7 @@ const Blog: FC = () => {
           </Heading>
         </div>
       </header>
-      <main className={styles.main}>{displayBlogs}</main>
+      <main className={styles.main}>{displayPosts}</main>
     </>
   );
 };
