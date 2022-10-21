@@ -9,7 +9,7 @@
 // Tablet
 @mixin grid-xs {
   display: grid;
-  grid-template-columns: 0 repeat(8, 1fr) 0;
+  grid-template-columns: 16px repeat(8, 1fr) 16px;
   column-gap: 16px;
 }
 
