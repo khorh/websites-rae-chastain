@@ -5,6 +5,7 @@ import Icon from "../../components/Icon/Icon";
 import Heading from "../../components/Text/Heading/Heading";
 import Paragraph from "../../components/Text/Paragraph/Paragraph";
 import DataBlog from "../../assets/data/DataBlog.mocked";
+import { skipPartiallyEmittedExpressions } from "typescript";
 
 const Blog: FC = () => {
   // Method to sort blog posts
@@ -18,7 +19,7 @@ const Blog: FC = () => {
     return (
       <div className={styles.content}>
         <Image name={display.imageName} />
-        <div>
+        <div className={styles.content__dateShareText}>
           <div className={styles.content__dateShare}>
             <Paragraph>{display.datePosted}</Paragraph>
             <Icon name="share" size="small" />
