@@ -1,7 +1,18 @@
 @import "./styles/main.scss";
 
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
+  padding: 0;
+  box-sizing: inherit;
   > div {
     @include breakpoint-xxs {
       @include grid-xxs;
