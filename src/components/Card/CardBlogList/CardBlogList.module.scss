@@ -1,12 +1,13 @@
 @import "../../../styles/main.scss";
 
-.blogList {
+.content {
   &:not(:last-child) {
     margin-bottom: $spacing-16;
   }
   border: 1px solid $color-primary-main;
   padding: $spacing-24 $spacing-16;
   width: fit-content;
+  font-size: 0;
 
   img {
     width: 256px;
@@ -20,7 +21,7 @@
   }
 }
 
-.blogList__dateShareText {
+.content__dateShareText {
   padding-top: $spacing-16;
   width: 256px;
 
@@ -30,13 +31,13 @@
   }
 }
 
-.blogList__dateShare {
+.content__dateShare {
   margin-bottom: $spacing-16;
   display: flex;
   justify-content: space-between;
 }
 
-.blogList__text {
+.content__text {
   p {
     overflow: hidden;
     text-overflow: ellipsis;

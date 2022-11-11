@@ -15,10 +15,10 @@ export interface CardBlogListProps
 
 const CardBlogList: FC<CardBlogListProps> = (props) => {
   return (
-    <div className={styles.blogList}>
+    <div className={styles.content}>
       <Image imageName={props.blogImageName} />
-      <div className={styles.blogList__dateShareText}>
-        <div className={styles.blogList__dateShare}>
+      <div className={styles.content__dateShareText}>
+        <div className={styles.content__dateShare}>
           <Paragraph>{props.blogDatePosted}</Paragraph>
           <Icon name="share" size="small" />
         </div>
@@ -26,7 +26,7 @@ const CardBlogList: FC<CardBlogListProps> = (props) => {
           <Heading type="h2" font="primary" marginBottom={16}>
             {props.blogName}
           </Heading>
-          <div className={styles.blogList__text}>
+          <div className={styles.content__text}>
             <Paragraph size="large">{props.blogDescription}</Paragraph>
           </div>
         </div>
