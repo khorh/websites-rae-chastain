@@ -1,0 +1,48 @@
+@import "../../../styles/main.scss";
+
+.blogList {
+  &:not(:last-child) {
+    margin-bottom: $spacing-16;
+  }
+  border: 1px solid $color-primary-main;
+  padding: $spacing-24 $spacing-16;
+  width: fit-content;
+
+  img {
+    width: 256px;
+    height: 192px;
+    object-fit: cover;
+  }
+
+  @include breakpoint-xs {
+    width: 100%;
+    display: flex;
+  }
+}
+
+.blogList__dateShareText {
+  padding-top: $spacing-16;
+  width: 256px;
+
+  @include breakpoint-xs {
+    padding: $spacing-0 $spacing-0 $spacing-0 $spacing-16;
+    width: 100%;
+  }
+}
+
+.blogList__dateShare {
+  margin-bottom: $spacing-16;
+  display: flex;
+  justify-content: space-between;
+}
+
+.blogList__text {
+  p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+}
