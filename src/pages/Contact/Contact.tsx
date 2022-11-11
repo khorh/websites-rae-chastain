@@ -30,10 +30,10 @@ const Contact = () => {
             Contact
           </Heading>
         </div>
-        <Image name="paperPlane" />
+        <Image imageName="paperPlane" />
       </header>
       <main className={styles.main}>
-          <Paragraph size="large">{contactData}</Paragraph>
+        <Paragraph size="large">{contactData}</Paragraph>
       </main>
     </>
   );
