@@ -2,7 +2,7 @@ import { FC } from "react";
 import styles from "./BooksMain.module.scss";
 import Divider from "../../../components/Divider/Divider";
 import DataBooks from "../../../assets/data/DataBooks.mocked";
-import CardOtherBook from "../../../components/Card/CardOtherBook/CardOtherBook";
+import CardBooksOtherBook from "../../../components/Card/CardBooksOtherBook/CardBooksOtherBook";
 
 const BooksMain: FC = () => {
   // Method to filter other books
@@ -23,7 +23,7 @@ const BooksMain: FC = () => {
     const bookReleaseDate = new Date(display.releaseDate).getTime();
     const bookStatus = bookReleaseDate > dateNow ? "Coming soon!" : "Out now!";
     return (
-      <CardOtherBook
+      <CardBooksOtherBook
         key={display.id}
         imageName={display.imageName}
         name={display.name}
