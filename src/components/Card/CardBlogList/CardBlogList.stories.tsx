@@ -7,12 +7,12 @@ export default {
   component: CardBlogList,
 } as ComponentMeta<typeof CardBlogList>;
 
-export const BlogLists: ComponentStory<typeof CardBlogList> = (
+export const BlogList: ComponentStory<typeof CardBlogList> = (
   args: CardBlogListProps
 ) => {
   // Method to filter on a blog
   const filteredOnABlog = DataBlog.filter(
-    (filter) => filter.blogId === "blog005"
+    (filter) => filter.blogId === "blog001"
   );
 
   console.log(filteredOnABlog);
