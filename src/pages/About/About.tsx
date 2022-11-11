@@ -35,7 +35,7 @@ const About = () => {
             About
           </Heading>
         </div>
-        <Image name="womanDesigning" />
+        <Image imageName="womanDesigning" />
       </header>
       <main className={styles.main}>
         <Paragraph size="large" marginBottom={16}>
