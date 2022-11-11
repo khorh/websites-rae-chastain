@@ -5,18 +5,18 @@ interface ImageProps {
   /**
    * What is the image's name?
    */
-  name: string;
+  imageName: string;
 }
 
 const Image: FC<ImageProps> = (props) => {
   // Method to filter the image
   const FilteredImage = DataImages.filter(
-    (filter) => filter.name === props.name
+    (filter) => filter.imageName === props.imageName
   );
 
   // Method to display the image
   const DisplayImage = FilteredImage.map((display) => {
-    return <img key={display.id} src={display.src} alt={display.alt} />;
+    return <img key={display.imageId} src={display.imageSrc} alt={display.imageAlt} />;
   });
 
   return <>{DisplayImage}</>;

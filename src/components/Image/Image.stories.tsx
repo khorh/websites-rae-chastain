@@ -18,10 +18,10 @@ const Template: ComponentStory<typeof Image> = (args) => <Image {...args} />;
 
 export const WomanDesigning = Template.bind({});
 WomanDesigning.args = {
-    name: "womanDesigning"
-}
+  imageName: "womanDesigning",
+};
 
 export const PaperPlane = Template.bind({});
 PaperPlane.args = {
-    name: "paperPlane"
-}
+  imageName: "paperPlane",
+};
