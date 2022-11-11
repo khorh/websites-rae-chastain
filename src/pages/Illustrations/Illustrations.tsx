@@ -7,14 +7,14 @@ import DataImages from "../../assets/data/DataImages.mocked";
 const Illustrations: FC = () => {
   // Method to filter images with category as illustrations
   const filterImages = DataImages.filter(
-    (filter) => filter.category === "illustrations"
+    (filter) => filter.imageCategory === "illustrations"
   );
 
   // Method to display illustrations
   const displayIllustrations = filterImages.map((display) => {
     return (
-      <div key={display.id} className={styles.content__brick}>
-        <Image name={display.name} />
+      <div key={display.imageId} className={styles.content__brick}>
+        <Image imageName={display.imageName} />
       </div>
     );
   });
