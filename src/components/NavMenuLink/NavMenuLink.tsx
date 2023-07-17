@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { NavLink } from "react-router-dom";
-import styles from "./NavLink.module.scss";
+import styles from "./NavMenuLink.module.scss";
 
 export interface NavMenuLinkProps
   extends React.HTMLAttributes<HTMLLinkElement> {
